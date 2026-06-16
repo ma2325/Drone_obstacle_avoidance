@@ -1,0 +1,74 @@
+{
+    "battery": {
+        "topic": "/mavros/battery",
+        "msg_type": "sensor_msgs/BatteryState",
+        "description": "电池状态信息",
+        "fields": ["voltage", "current", "percentage", "temperature"]
+    },
+    "status": {
+        "topic": "/mavros/state",
+        "msg_type": "mavros_msgs/State",
+        "description": "无人机状态信息",
+        "fields": ["connected", "armed", "guided", "mode"]
+    },
+    "odometry": {
+        "topic": "/CERLAB/quadcopter/odom",
+        "msg_type": "nav_msgs/Odometry",
+        "description": "无人机位置信息",
+        "fields": ["pose", "twist"]
+    },
+    "velocity": {
+        "topic": "/CERLAB/quadcopter/vel",
+        "msg_type": "geometry_msgs/TwistStamped",
+        "description": "无人机速度（CERLAB 仿真）；无发布者时可由里程计 twist 兜底",
+        "fields": ["linear", "angular"]
+    },
+    "camera": {
+        "topic": "/camera/color/image_raw",
+        "msg_type": "sensor_msgs/Image",
+        "description": "无人机RGB检测图像",
+        "fields": ["data", "encoding", "width", "height"]
+    },
+    "depth": {
+        "topic": "/camera/depth/image_raw",
+        "msg_type": "sensor_msgs/Image",
+        "description": "无人机深度摄像头图像",
+        "fields": ["data", "encoding", "width", "height"]
+    },
+    "depth_camera_info": {
+        "topic": "/camera/depth/camera_info",
+        "msg_type": "sensor_msgs/CameraInfo",
+        "description": "深度相机内参（用于中部 RViz 深度点云）",
+        "fields": ["K", "width", "height"]
+    },
+    "bird_view": {
+        "topic": "/onboard_detector/bird_view",
+        "msg_type": "sensor_msgs/Image",
+        "description": "障碍物鸟瞰图",
+        "fields": ["data", "encoding", "width", "height"]
+    },
+    "attitude": {
+        "topic": "/mavros/imu/data",
+        "msg_type": "sensor_msgs/Imu",
+        "description": "无人机姿态信息",
+        "fields": ["orientation", "angular_velocity", "linear_acceleration"]
+    },
+    "rc_input": {
+        "topic": "/mavros/rc/in",
+        "msg_type": "mavros_msgs/RCIn",
+        "description": "遥控器输入信号",
+        "fields": ["header", "rssi", "channels"]
+    },
+    "fsm_state": {
+        "topic": "/drone_0_ego_planner_node/planning/fsm_state",
+        "msg_type": "std_msgs/Int32",
+        "description": "规划器状态机状态",
+        "fields": ["data"]
+    },
+    "obstacle_states": {
+        "topic": "/onboard_detector/GT_obstacle_bbox",
+        "msg_type": "visualization_msgs/MarkerArray",
+        "description": "动态障碍物状态信息",
+        "fields": ["header", "markers"]
+    }
+}

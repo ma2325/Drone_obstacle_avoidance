@@ -1,0 +1,24 @@
+[
+  { "date": "2025-04-07", "taskType": "抛洒物识别", "airport": "机场A", "pictures": 320, "videos": 210 },
+  { "date": "2025-04-08", "taskType": "抛洒物识别", "airport": "机场A", "pictures": 260, "videos": 170 },
+  { "date": "2025-04-09", "taskType": "抛洒物识别", "airport": "机场A", "pictures": 240, "videos": 150 },
+  { "date": "2025-04-10", "taskType": "抛洒物识别", "airport": "机场A", "pictures": 300, "videos": 210 },
+  { "date": "2025-04-11", "taskType": "抛洒物识别", "airport": "机场A", "pictures": 420, "videos": 310 },
+  { "date": "2025-04-12", "taskType": "抛洒物识别", "airport": "机场A", "pictures": 520, "videos": 330 },
+  { "date": "2025-04-13", "taskType": "抛洒物识别", "airport": "机场A", "pictures": 540, "videos": 320 },
+
+  { "date": "2025-04-07", "taskType": "团雾检测", "airport": "机场B", "pictures": 340, "videos": 180 },
+  { "date": "2025-04-08", "taskType": "团雾检测", "airport": "机场B", "pictures": 300, "videos": 160 },
+  { "date": "2025-04-09", "taskType": "团雾检测", "airport": "机场B", "pictures": 320, "videos": 140 },
+  { "date": "2025-04-10", "taskType": "团雾检测", "airport": "机场B", "pictures": 280, "videos": 170 },
+  { "date": "2025-04-11", "taskType": "团雾检测", "airport": "机场B", "pictures": 460, "videos": 260 },
+  { "date": "2025-04-12", "taskType": "团雾检测", "airport": "机场B", "pictures": 600, "videos": 290 },
+  { "date": "2025-04-13", "taskType": "团雾检测", "airport": "机场B", "pictures": 580, "videos": 280 },
+
+  { "date": "2025-04-13", "taskType": "病害识别",   "airport": "机场C", "pictures": 300, "videos": 120 },
+  { "date": "2025-04-13", "taskType": "拥堵点检测", "airport": "机场D", "pictures": 340, "videos": 240 },
+  { "date": "2025-04-13", "taskType": "桥梁检测",   "airport": "机场E", "pictures": 390, "videos": 280 },
+  { "date": "2025-04-13", "taskType": "边坡检测",   "airport": "机场E", "pictures": 390, "videos": 280 }
+
+]
+

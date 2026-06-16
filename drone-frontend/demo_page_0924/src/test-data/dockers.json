@@ -1,0 +1,62 @@
+[
+  {
+    "id": "test1",
+    "name": "机场1",
+    "position": [115.695699, 39.043926],
+    "status": "空闲",
+    "model": "智能调度平台 A型",
+    "temperature": 25,
+    "windSpeed": 3,
+    "rainfall": 0,
+    "videoStream": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "associatedDevices": []
+  },
+  {
+    "id": "test2",
+    "name": "机场2",
+    "position": [115.590389, 38.905494],
+    "status": "待命",
+    "model": "智能调度平台 B型",
+    "temperature": 24,
+    "windSpeed": 4,
+    "rainfall": 1,
+    "videoStream": "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8",
+    "associatedDevices": ["uav2"]
+  },
+  {
+    "id": "test3",
+    "name": "机场3",
+    "position": [115.579662, 38.870149],
+    "status": "空闲",
+    "model": "远程站点型 C型",
+    "temperature": 23,
+    "windSpeed": 6,
+    "rainfall": 3,
+    "videoStream": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "associatedDevices": []
+  },
+  {
+    "id": "test4",
+    "name": "机场4",
+    "position": [115.449164, 38.742525],
+    "status": "空闲",
+    "model": "远程站点型 D型",
+    "temperature": 25,
+    "windSpeed": 3,
+    "rainfall": 0,
+    "videoStream": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "associatedDevices": []
+  },
+  {
+    "id": "test5",
+    "name": "机场5",
+    "position": [115.200221, 38.651913],
+    "status": "空闲",
+    "model": "智能调度平台 E型",
+    "temperature": 26,
+    "windSpeed": 2,
+    "rainfall": 0,
+    "videoStream": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "associatedDevices": []
+  }
+]

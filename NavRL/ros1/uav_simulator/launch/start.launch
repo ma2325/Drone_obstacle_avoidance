@@ -1,0 +1,66 @@
+<launch>
+  <arg name="paused" value="false"/>
+  <arg name="verbose" value="false"/>
+  <arg name="use_sim_time" value="true"/>
+  <arg name="debug" value="false" />
+
+  <!-- Gazebo 加载自定义插件：libquadcopterPlugin.so / libobstaclePathPlugin.so -->
+  <env name="GAZEBO_PLUGIN_PATH"
+       value="$(find uav_simulator)/plugins:$(optenv GAZEBO_PLUGIN_PATH)" />
+
+  <!-- 让所有 ROS Python 节点使用系统 python3（避免 Conda 环境缺 rospkg） -->
+  <env name="PATH" value="/usr/bin:/usr/local/bin:$(optenv PATH)" />
+
+  <!-- 供 Gazebo/Ogre 查找网格与材质；须在启动 gzserver 的 include 之前设置 -->
+  <env name="GAZEBO_RESOURCE_PATH"
+       value="$(find uav_simulator)/urdf/quadcopter/meshes:$(find uav_simulator)/urdf:$(optenv GAZEBO_RESOURCE_PATH)" />
+  <!-- model://person 等需从本包 models 解析，否则行人网格/动态插件可能异常 -->
+  <env name="GAZEBO_MODEL_PATH"
+       value="$(find uav_simulator)/models:$(optenv GAZEBO_MODEL_PATH)" />
+
+  <!-- 默认：柱阵 + 边界围墙 + 动态行人；可改回 generated_env_static.world -->
+  <arg name="world_name" default="$(find uav_simulator)/worlds/generated_env/generated_env_demo_rich.world" />
+  <!-- <arg name="world_name" value="$(find uav_simulator)/worlds/generated_env/generated_env_static.world" /> -->
+  <!-- <arg name="world_name" value="$(find uav_simulator)/worlds/generated_env/generated_env_dynamic.world" /> -->
+  <!-- <arg name="world_name" value="$(find uav_simulator)/worlds/generated_env/generated_env_initial.world" /> -->
+
+  
+  <!-- launch the custom world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch" >
+        <arg name="paused" value="$(arg paused)"/>
+        <arg name="world_name" value="$(arg world_name)"/>
+        <arg name="verbose" value="$(arg verbose)"/>
+        <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+        <arg name="debug" value="$(arg debug)" />
+  </include>
+
+
+  <arg name="mesh_prefix" default="$(find uav_simulator)/urdf/quadcopter/meshes"/>
+  <!-- 强制用系统 Python 跑 xacro，避免 Conda 环境缺 rospkg 导致解析失败 -->
+  <param name="robot_description"
+         command="/usr/bin/python3 $(find xacro)/xacro $(find uav_simulator)/urdf/quadcopter.xacro mesh_prefix:=$(arg mesh_prefix)" />
+
+  <!-- 须先于 throttle 等节点插入机体：大 world 下 gzserver 注册 spawn_urdf_model 较晚，spawn 抢跑会失败 -->
+  <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model"
+        launch-prefix="$(find uav_simulator)/scripts/wait_for_gazebo_spawn.sh"
+        args="-urdf -param robot_description -model quadcopter -x 0.0 -y 0.0 -z 0.2 -Y 0.0"
+        respawn="false" output="screen"/>
+
+  <node pkg="topic_tools" type="throttle" name="gt_pose_throttle" args="messages /CERLAB/quadcopter/pose_raw 30 /CERLAB/quadcopter/pose"/>
+  <node pkg="topic_tools" type="throttle" name="gt_vel_throttle" args="messages /CERLAB/quadcopter/vel_raw 30 /CERLAB/quadcopter/vel"/>
+  <node pkg="topic_tools" type="throttle" name="gt_acc_throttle" args="messages /CERLAB/quadcopter/acc_raw 30 /CERLAB/quadcopter/acc"/>
+  <node pkg="topic_tools" type="throttle" name="gt_odom_throttle" args="messages /CERLAB/quadcopter/odom_raw 30 /CERLAB/quadcopter/odom"/>
+
+  <!-- TF：插件与 quadcopterTF 发布 map->base_link；RViz/航点常用 world，补恒等 world->map -->
+  <node pkg="tf" type="static_transform_publisher" name="world_to_map"
+        args="0 0 0 0 0 0 world map 100" />
+
+  <include file="$(find uav_simulator)/launch/setupTF.launch" >
+    <arg name="pose_topic" value="/CERLAB/quadcopter/pose" />
+  </include>
+
+  <node name="keyboard_control" pkg="uav_simulator" type="keyboard_control" />
+
+  <!-- <include file="$(find uav_simulator)/launch/rviz.launch"></include> -->
+
+</launch>

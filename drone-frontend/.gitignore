@@ -1,0 +1,8 @@
+# macOS metadata
+.DS_Store
+
+# Large binary assets kept locally, not committed to GitHub
+demo_page_0924/public/models/bridge1.glb
+demo_page_0924/public/models/docker1.glb
+demo_page_0924/public/models/drone_bridge.glb
+demo_page_0924/public/videos/video3.mp4

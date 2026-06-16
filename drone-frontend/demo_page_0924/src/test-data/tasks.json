@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "高速巡检-京港澳北段",
+    "startTime": "2025-07-01 08:00",
+    "endTime": "2025-07-01 10:30",
+    "type": "线路扫描",
+    "route": "X-001",
+    "drone": "无人机1",
+    "creator": "admin"
+  },
+  {
+    "id": 2,
+    "name": "桥梁复查",
+    "startTime": "2025-07-02 14:00",
+    "endTime": "2025-07-02 16:00",
+    "type": "点位扫描",
+    "route": "D-002",
+    "drone": "无人机2",
+    "creator": "operator01"
+  },
+  {
+    "id": 3,
+    "name": "桥梁常规体检-拒马河大桥",
+    "startTime": "2025-07-03 09:00",
+    "endTime": "2025-07-03 11:15",
+    "type": "点位扫描",
+    "route": "D-003",
+    "drone": "无人机3",
+    "creator": "inspector"
+  },
+  {
+    "id": 4,
+    "name": "路面病害建图-试验段",
+    "startTime": "2025-07-05 07:30",
+    "endTime": "2025-07-05 12:00",
+    "type": "点位扫描",
+    "route": "D-101",
+    "drone": "无人机3",
+    "creator": "mapper"
+  },
+  {
+    "id": 5,
+    "name": "高速巡检",
+    "startTime": "2025-07-06 13:00",
+    "endTime": "2025-07-06 15:30",
+    "type": "线路扫描",
+    "route": "X-002",
+    "drone": "无人机1",
+    "creator": "admin"
+  },
+  {
+    "id": 6,
+    "name": "夜航热成像-隧道口",
+    "startTime": "2025-07-08 19:00",
+    "endTime": "2025-07-08 21:00",
+    "type": "点位扫描",
+    "route": "T-008",
+    "drone": "无人机5",
+    "creator": "thermal"
+  },
+  {
+    "id": 7,
+    "name": "事故复盘-路段还原",
+    "startTime": "2025-06-29 10:00",
+    "endTime": "2025-06-29 12:00",
+    "type": "点位扫描",
+    "route": "D-120",
+    "drone": "无人机4",
+    "creator": "forensic"
+  },
+  {
+    "id": 8,
+    "name": "边坡巡检-K120-K135",
+    "startTime": "2025-06-28 08:30",
+    "endTime": "2025-06-28 11:30",
+    "type": "点位扫描",
+    "route": "D-777",
+    "drone": "无人机7",
+    "creator": "inspector"
+  }
+]

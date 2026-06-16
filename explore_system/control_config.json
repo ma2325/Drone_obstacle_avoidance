@@ -1,0 +1,40 @@
+{
+  "backend": "navrl_passive",
+  "gazebo": {
+    "enable_spawn_teleport": true,
+    "drone_model_name": "quadcopter",
+    "spawn_xyz": [0.0, 0.0, 0.72],
+    "spawn_rpy": [0.0, 0.0, 0.0],
+    "set_model_state_service": "/gazebo/set_model_state",
+    "pause_physics_service": "/gazebo/pause_physics",
+    "unpause_physics_service": "/gazebo/unpause_physics"
+  },
+  "cerlab": {
+    "takeoff_topic": "/CERLAB/quadcopter/takeoff",
+    "land_topic": "/CERLAB/quadcopter/land",
+    "reset_topic": "/CERLAB/quadcopter/reset",
+    "cmd_vel_topic": "/CERLAB/quadcopter/cmd_vel",
+    "vel_mode_topic": "/CERLAB/quadcopter/vel_mode",
+    "posctrl_topic": "/CERLAB/quadcopter/posctrl",
+    "body_speed_mps": 1.0,
+    "control_rate_hz": 20
+  },
+  "mavros": {
+    "use_hybrid_with_px4ctrl": true,
+    "state_topic": "/mavros/state",
+    "setpoint_topic": "/mavros/setpoint_raw/target_local",
+    "arming_service": "/mavros/cmd/arming",
+    "set_mode_service": "/mavros/set_mode",
+    "takeoff_altitude_m": 1.5,
+    "body_speed_mps": 1.0,
+    "control_rate_hz": 20
+  },
+  "px4ctrl": {
+    "takeoff_land_topic": "/px4ctrl/takeoff_land",
+    "takeoff_land_msg_type": "quadrotor_msgs/TakeoffLand",
+    "move_topic": "",
+    "move_msg_type": "",
+    "move_hint": "如果你使用 px4ctrl/ego_planner 这条链路，请把 move_topic/move_msg_type 填成你工程里真实存在的控制话题（例如 position_cmd/bodyrate_cmd/cmd_vel 之一）。"
+  }
+}
+

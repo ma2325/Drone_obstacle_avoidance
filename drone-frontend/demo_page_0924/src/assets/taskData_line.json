@@ -1,0 +1,35 @@
+[
+  {
+    "name": "航线任务B",
+    "drone_name": "Mavic 3",
+    "location": "北京市",
+    "creator": "user2",
+    "startTime": "2025-04-15 09:00:00",
+    "cloud": "待上传",
+    "type": "建图航拍",
+    "thumbnailUrl": "/media/thumbnails/task_001.png"
+  },
+  {
+    "name": "航线任务A",
+    "drone_name": "Matrice 3TD",
+    "location": "北京市",
+    "creator": "user1",
+    "startTime": "2025-04-14 09:00:00",
+    "cloud": "已同步",
+    "type": "航点飞行",
+    "thumbnailUrl": "/media/thumbnails/task_002.png"
+  },
+  {
+    "name": "航线任务C",
+    "drone_name": "Matrice 3TD",
+    "location": "北京市",
+    "creator": "user3",
+    "startTime": "2025-04-16 14:30:00",
+    "cloud": "已同步",
+    "type": "带状航线",
+    "thumbnailUrl": "/media/thumbnails/task_003.png"
+  }
+]
+
+ 
+  

@@ -1,0 +1,343 @@
+.uav-screen {
+  height: 100%;
+  min-height: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(0, 163, 255, 0.18), transparent 35%),
+    radial-gradient(circle at 80% 5%, rgba(0, 228, 255, 0.16), transparent 32%),
+    #04143b;
+  color: #d9f8ff;
+  padding: 8px 12px 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.uav-screen-header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  background: linear-gradient(90deg, rgba(0, 178, 255, 0.05), rgba(0, 229, 255, 0.16), rgba(0, 178, 255, 0.05));
+  border: 1px solid rgba(0, 196, 255, 0.45);
+  position: relative;
+}
+
+.uav-screen-title {
+  font-size: 34px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: #d7fbff;
+  text-shadow: 0 0 12px rgba(28, 228, 255, 0.45);
+}
+
+.uav-screen-sub {
+  position: absolute;
+  right: 14px;
+  top: 10px;
+  font-size: 13px;
+  color: #89dfff;
+}
+
+.uav-grid {
+  display: grid;
+  grid-template-columns: 26fr 48fr 26fr;
+  gap: 10px;
+  height: calc(100% - 72px);
+  min-height: 0;
+}
+
+.panel {
+  border: 1px solid rgba(8, 177, 255, 0.55);
+  background: linear-gradient(180deg, rgba(4, 35, 85, 0.85), rgba(2, 21, 58, 0.92));
+  box-shadow: inset 0 0 24px rgba(0, 140, 255, 0.22);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 3px;
+  background: #26d4ff;
+}
+
+.panel::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 36px;
+  height: 3px;
+  background: #26d4ff;
+}
+
+.panel-title {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 12px;
+  color: #7ce4ff;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(27, 167, 233, 0.35);
+  background: linear-gradient(90deg, rgba(6, 90, 164, 0.45), rgba(6, 90, 164, 0.05));
+}
+
+.panel-body {
+  flex: 1;
+  min-height: 0;
+}
+
+.chart {
+  width: 100%;
+  height: 100%;
+}
+
+.left-column,
+.right-column {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 32fr 32fr 36fr;
+  min-height: 0;
+}
+
+.center-column {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 18fr 56fr 26fr;
+  min-height: 0;
+}
+
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.kpi-card {
+  border: 1px solid rgba(0, 190, 255, 0.6);
+  background: linear-gradient(180deg, rgba(2, 40, 92, 0.8), rgba(4, 29, 75, 0.8));
+  padding: 10px;
+}
+
+.kpi-label {
+  color: #8fdfff;
+  font-size: 14px;
+}
+
+.kpi-value {
+  font-size: 34px;
+  color: #2cf4ff;
+  margin-top: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.kpi-unit {
+  font-size: 14px;
+  color: #8fdfff;
+}
+
+.control-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.control-table th,
+.control-table td {
+  border: 1px solid rgba(38, 170, 255, 0.35);
+  padding: 8px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.control-table th {
+  color: #9ce7ff;
+  font-weight: 600;
+  background: rgba(0, 122, 204, 0.18);
+}
+
+.state-online {
+  color: #40ffbd;
+}
+
+.state-offline {
+  color: #ff8b8b;
+}
+
+.center-map {
+  min-height: 0;
+}
+
+.center-map .panel-body {
+  min-height: 0;
+}
+
+.map-title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.route-switcher {
+  display: flex;
+  gap: 6px;
+}
+
+.route-btn {
+  border: 1px solid rgba(82, 188, 255, 0.5);
+  background: rgba(11, 61, 115, 0.65);
+  color: #bfefff;
+  font-size: 12px;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+
+.route-btn.active {
+  border-color: #38e2ff;
+  color: #ffffff;
+  box-shadow: 0 0 8px rgba(56, 226, 255, 0.45);
+}
+
+.real-map-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+}
+
+.real-map-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.route-overlay {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  width: min(420px, calc(100% - 20px));
+  background: rgba(4, 26, 67, 0.72);
+  border: 1px solid rgba(47, 188, 255, 0.5);
+  backdrop-filter: blur(2px);
+  padding: 8px 10px;
+}
+
+.route-overlay.collapsed {
+  width: min(300px, calc(100% - 20px));
+  padding-bottom: 6px;
+}
+
+.route-overlay-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.overlay-toggle-btn {
+  border: 1px solid rgba(82, 188, 255, 0.6);
+  background: rgba(9, 76, 135, 0.72);
+  color: #d8f8ff;
+  font-size: 12px;
+  padding: 2px 10px;
+  cursor: pointer;
+}
+
+.overlay-toggle-btn:hover {
+  border-color: #38e2ff;
+}
+
+.route-overview-row {
+  display: flex;
+  gap: 14px;
+  font-size: 12px;
+  color: #9de9ff;
+  margin-bottom: 6px;
+}
+
+.route-drone-list {
+  display: grid;
+  gap: 4px;
+  max-height: 120px;
+  overflow: auto;
+}
+
+.route-drone-item {
+  display: grid;
+  grid-template-columns: 1.2fr 0.7fr 1.3fr;
+  align-items: center;
+  font-size: 12px;
+  color: #c4f4ff;
+  border-bottom: 1px dashed rgba(63, 173, 232, 0.35);
+  padding-bottom: 2px;
+}
+
+.route-drone-item strong {
+  color: #3effbd;
+  font-weight: 600;
+}
+
+.route-drone-item em {
+  color: #8fdfff;
+  font-style: normal;
+}
+
+.ring-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.carousel-note {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  font-size: 12px;
+  color: #67ceff;
+}
+
+.metrics-list {
+  padding: 8px 10px;
+  font-size: 13px;
+}
+
+.metrics-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dashed rgba(34, 157, 224, 0.35);
+}
+
+.metrics-line:last-child {
+  border-bottom: 0;
+}
+
+@media (max-width: 1600px) {
+  .uav-screen-title {
+    font-size: 28px;
+  }
+
+  .kpi-value {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .uav-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    min-height: auto;
+  }
+
+  .left-column,
+  .right-column,
+  .center-column {
+    grid-template-rows: auto;
+  }
+
+  .panel {
+    min-height: 300px;
+  }
+}

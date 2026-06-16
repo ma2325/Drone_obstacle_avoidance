@@ -1,0 +1,87 @@
+[
+  {
+    "id": "preset-1",
+    "name": "琉璃河-涿州北拥堵点巡检",
+    "type": "预设航线",
+    "drone_name": "Matrice 3TD",
+    "startStation": "琉璃河收费站",
+    "endStation": "涿州北收费站",
+    "creator": "adminPC",
+    "startTime": "2024-01-02 10:00:00",
+    "cloud": "已同步",
+    "thumbnailUrl": "/media/thumbnails/task_01.png",
+    "preset3dKey": "route_1",
+    "media": []
+  },
+  {
+    "id": "preset-1",
+    "name": "拒马河大桥巡检",
+    "type": "预设航线",
+    "drone_name": "Matrice 3TD",
+    "startStation": "琉璃河收费站",
+    "endStation": "涿州北收费站",
+    "creator": "adminPC",
+    "startTime": "2024-01-02 10:00:00",
+    "cloud": "已同步",
+    "thumbnailUrl": "/media/thumbnails/task_022.png",
+    "preset3dKey": "route_1",
+    "media": []
+  },
+  {
+    "id": "preset-6",
+    "name": "徐水-保定北巡检",
+    "type": "预设航线",
+    "drone_name": "Matrice 3TD",
+    "startStation": "徐水收费站",
+    "endStation": "保定北收费站",
+    "creator": "adminPC",
+    "startTime": "2024-01-04 10:00:00",
+    "cloud": "已同步",
+    "thumbnailUrl": "/media/thumbnails/task_06.png",
+    "preset3dKey": "route_6",
+    "media": []
+  },
+  {
+    "id": "preset-7",
+    "name": "保定北-保定巡检",
+    "type": "预设航线",
+    "drone_name": "Matrice 3TD",
+    "startStation": "保定北收费站",
+    "endStation": "保定收费站",
+    "creator": "adminPC",
+    "startTime": "2024-01-04 10:00:00",
+    "cloud": "已同步",
+    "thumbnailUrl": "/media/thumbnails/task_07.png",
+    "preset3dKey": "route_7",
+    "media": []
+  },
+  {
+    "id": "preset-8",
+    "name": "保定-清苑巡检",
+    "type": "预设航线",
+    "drone_name": "Matrice 3TD",
+    "startStation": "保定收费站",
+    "endStation": "清苑收费站",
+    "creator": "adminPC",
+    "startTime": "2024-01-04 10:00:00",
+    "cloud": "已同步",
+    "thumbnailUrl": "/media/thumbnails/task_08.png",
+    "preset3dKey": "route_8",
+    "media": []
+  },
+  {
+    "id": "preset-9",
+    "name": "清苑-望都巡检",
+    "type": "预设航线",
+    "drone_name": "Matrice 3TD",
+    "startStation": "清苑收费站",
+    "endStation": "望都收费站",
+    "creator": "adminPC",
+    "startTime": "2024-01-04 10:00:00",
+    "cloud": "已同步",
+    "thumbnailUrl": "/media/thumbnails/task_09.png",
+    "preset3dKey": "route_9",
+    "media": []
+  }
+
+]

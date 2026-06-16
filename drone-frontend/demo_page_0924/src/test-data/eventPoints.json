@@ -1,0 +1,49 @@
+[
+  {
+    "id": "cong_001",
+    "type": "congestion",
+    "name": "拥堵点1",
+    "position": [115.639325, 38.959415, 300]
+  },
+  {
+    "id": "bridge_001",
+    "type": "bridge",
+    "name": "拒马桥",
+    "position": [116.033871,39.537127, 300]
+  },
+  {
+    "id": "cong_002",
+    "type": "congestion",
+    "name": "拥堵点2",
+    "position": [115.237634, 38.6759, 300]
+  },
+  {
+    "id": "danger_001",
+    "type": "danger",
+    "name": "危险点1",
+    "position": [115.376083, 38.734213, 300]
+  },
+  {
+    "id": "cong_003",
+    "type": "congestion",
+    "name": "拥堵点3",
+    "position": [115.661183,
+    38.975019,
+    300]
+  },
+  {
+    "id": "bridge_002",
+    "type": "bridge",
+    "name": "大桥2",
+    "position": [115.615394,38.929095,
+    300]
+  },
+  {
+    "id": "danger_002",
+    "type": "danger",
+    "name": "危险点2",
+    "position": [115.585588,
+    38.894222,
+    300]
+  }
+]

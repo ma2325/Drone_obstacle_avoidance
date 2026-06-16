@@ -1,0 +1,13 @@
+{
+  "deviceId": 1,
+  "battery": 83,
+  "height": 79.80,
+  "speed": 65.00,
+  "heading": -2.5,
+  "flightTime": "26:24",
+  "spo": 0.00,
+  "rtk": 48,
+  "latitude": 31.052912,
+  "longitude": 121.27228,
+  "status": "飞行中"
+}

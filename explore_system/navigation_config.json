@@ -1,0 +1,35 @@
+{
+  "goal_frame_id": "map",
+  "sync_goal_frame_to_odom": false,
+  "auto_sync_goal_on_stack_start": false,
+  "auto_publish_hold_goal_on_idle": false,
+  "navrl_preflight_hold_goal": false,
+  "hold_goal_publish_min_z_m": 0.45,
+  "skip_hold_goal_before_navigation": true,
+  "clear_flight_path_on_navigation_start": true,
+  "return_home_default_z": 0.95,
+  "return_home_default_z_min": 0.45,
+  "goal_topics": [
+    "/move_base_simple/goal",
+    "/drone_0_move_base_simple/goal"
+  ],
+  "waypoint_advance": {
+    "exec_state": 4,
+    "wait_state": 1,
+    "distance_mode": "horizontal",
+    "distance_fallback_m": 0.65,
+    "distance_fallback_xy_m": 0.65,
+    "distance_fallback_z_m": 0.55,
+    "min_seconds_before_distance_check": 1.2,
+    "navrl_traj_done_grace_sec": 2.0,
+    "stuck_no_progress_sec": 5.5,
+    "require_velocity_below_m_s": 0.0,
+    "velocity_below_required_seconds": 0.45
+  },
+  "prediction_display": {
+    "marker_topics": [
+      "/dynamic_predictor/predict_trajectories",
+      "/dynamic_predictor/intent_probability"
+    ]
+  }
+}

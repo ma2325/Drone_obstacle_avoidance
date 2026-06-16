@@ -1,0 +1,162 @@
+[
+  {
+    "drone_name": "大疆M300 RTK",
+    "sn_code": "2050708TQ00300Z",
+    "device_model": "M300-XYZ",
+    "login_time": "2025-07-08 10:03:00",
+    "group": "巡检组A",
+    "note": "状态正常"
+  },
+  {
+    "drone_name": "大疆Phantom 4",
+    "sn_code": "20250708T100301Z",
+    "device_model": "P4-Pro",
+    "login_time": "2025-07-07 14:20:00",
+    "group": "巡检组B",
+    "note": "电池需要更换"
+  },
+  {
+    "drone_name": "翼龙2",
+    "sn_code": "20250615T083000Z",
+    "device_model": "YL-2000",
+    "login_time": "2025-06-15 08:30:00",
+    "group": "侦察组",
+    "note": "需校准传感器"
+  },
+  {
+    "drone_name": "亿航G2",
+    "sn_code": "20250401T091500Z",
+    "device_model": "EH-G2",
+    "login_time": "2025-04-01 09:15:00",
+    "group": "物流组",
+    "note": "飞行记录正常"
+  },
+  {
+    "drone_name": "零度Xplorer",
+    "sn_code": "20250328T113000Z",
+    "device_model": "LD-XP",
+    "login_time": "2025-03-28 11:30:00",
+    "group": "巡检组C",
+    "note": "摄像头有轻微刮痕"
+  },
+  {
+    "drone_name": "Parrot Anafi",
+    "sn_code": "20250115T153000Z",
+    "device_model": "Anafi",
+    "login_time": "2025-01-15 15:30:00",
+    "group": "侦察组",
+    "note": "操作系统升级完成"
+  },
+  {
+    "drone_name": "大疆Mavic Air 2",
+    "sn_code": "20250220T100000Z",
+    "device_model": "Mavic Air 2",
+    "login_time": "2025-02-20 10:00:00",
+    "group": "巡检组A",
+    "note": "信号强"
+  },
+  {
+    "drone_name": "Skydio 2",
+    "sn_code": "20250505T120000Z",
+    "device_model": "Skydio 2",
+    "login_time": "2025-05-05 12:00:00",
+    "group": "物流组",
+    "note": "飞行稳定"
+  },
+  {
+    "drone_name": "Yuneec Typhoon H",
+    "sn_code": "20250410T090000Z",
+    "device_model": "Typhoon H",
+    "login_time": "2025-04-10 09:00:00",
+    "group": "巡检组B",
+    "note": "机械臂维修完成"
+  },
+  {
+    "drone_name": "PowerVision PowerEye",
+    "sn_code": "20250315T110000Z",
+    "device_model": "PowerEye",
+    "login_time": "2025-03-15 11:00:00",
+    "group": "侦察组",
+    "note": "状态良好"
+  },
+  {
+    "drone_name": "Autel EVO II",
+    "sn_code": "20250625T130000Z",
+    "device_model": "EVO II",
+    "login_time": "2025-06-25 13:00:00",
+    "group": "物流组",
+    "note": "新购设备"
+  },
+  {
+    "drone_name": "大疆Inspire 2",
+    "sn_code": "20250701T140000Z",
+    "device_model": "Inspire 2",
+    "login_time": "2025-07-01 14:00:00",
+    "group": "巡检组C",
+    "note": "摄像头更换"
+  },
+  {
+    "drone_name": "大疆Mavic Mini",
+    "sn_code": "20250301T080000Z",
+    "device_model": "Mavic Mini",
+    "login_time": "2025-03-01 08:00:00",
+    "group": "巡检组A",
+    "note": "轻便易用"
+  },
+  {
+    "drone_name": "Parrot Bebop 2",
+    "sn_code": "20250210T100000Z",
+    "device_model": "Bebop 2",
+    "login_time": "2025-02-10 10:00:00",
+    "group": "侦察组",
+    "note": "飞行时间短"
+  },
+  {
+    "drone_name": "大疆Mavic 2 Pro",
+    "sn_code": "20250420T150000Z",
+    "device_model": "Mavic 2 Pro",
+    "login_time": "2025-04-20 15:00:00",
+    "group": "巡检组B",
+    "note": "传感器升级"
+  },
+  {
+    "drone_name": "3DR Solo",
+    "sn_code": "20250515T160000Z",
+    "device_model": "3DR Solo",
+    "login_time": "2025-05-15 16:00:00",
+    "group": "物流组",
+    "note": "软件升级"
+  },
+  {
+    "drone_name": "Yuneec Breeze",
+    "sn_code": "20250325T170000Z",
+    "device_model": "Breeze",
+    "login_time": "2025-03-25 17:00:00",
+    "group": "巡检组C",
+    "note": "飞行稳定"
+  },
+  {
+    "drone_name": "大疆Phantom 3",
+    "sn_code": "20250105T090000Z",
+    "device_model": "Phantom 3",
+    "login_time": "2025-01-05 09:00:00",
+    "group": "巡检组A",
+    "note": "维护完成"
+  },
+  {
+    "drone_name": "Autel X-Star",
+    "sn_code": "20250228T100000Z",
+    "device_model": "X-Star",
+    "login_time": "2025-02-28 10:00:00",
+    "group": "侦察组",
+    "note": "传输信号好"
+  },
+  {
+    "drone_name": "Parrot Disco",
+    "sn_code": "20250415T110000Z",
+    "device_model": "Disco",
+    "login_time": "2025-04-15 11:00:00",
+    "group": "物流组",
+    "note": "新型号测试"
+  }
+]

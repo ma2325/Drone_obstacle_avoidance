@@ -1,0 +1,2978 @@
+{
+  "weeks": {
+    "2025-W34": {
+      "rules": {
+        "route_0":  { "require_min_weekly": 1, "require_by_weekday": { "1": 1 } },
+        "route_1":  { "require_min_weekly": 1, "require_by_weekday": { "6": 1 } },
+        "route_2":  { "require_min_weekly": 2, "require_by_weekday": {"1": 2} },
+        "route_3":  { "require_min_weekly": 1, "require_by_weekday": {"2": 1} },
+        "route_4":  { "require_min_weekly": 2, "require_by_weekday": {"7": 2} },
+        "route_5":  { "require_min_weekly": 1, "require_by_weekday": {"1": 1} },
+        "route_21": { "require_min_weekly": 2, "require_by_weekday": {"1": 1} },
+        "route_6":  { "require_min_weekly": 2, "require_by_weekday": { "6": 1 } },
+        "route_9":  { "require_min_weekly": 2, "require_by_weekday": {} },
+        "route_7":  { "require_min_weekly": 1, "require_by_weekday": {} },
+        "route_8":  { "require_min_weekly": 1, "require_by_weekday": {"1": 1} },
+        "route_10":  { "require_min_weekly": 2, "require_by_weekday": {"1": 1} },
+        "route_11":  { "require_min_weekly": 2, "require_by_weekday": {"2": 1} },
+        "route_12":  { "require_min_weekly": 2, "require_by_weekday": {"6": 1} },
+        "route_13":  { "require_min_weekly": 2, "require_by_weekday": {"2": 1} },
+        "route_14":  { "require_min_weekly": 2, "require_by_weekday": {} }
+      },
+      "subset": {
+        "route_1": [
+          {
+            "id": "1-1",
+            "name": "琉璃河-涿州北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","拥堵点检测"],
+            "route": "单程9.5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "R-001B",
+            "time_window": ["08:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机A",
+            "drone_id":"uav4",
+            "flightCount":"1.5",
+            "preset3d":"route_1",
+            "status":"已完成",
+            "exec_at":"6"
+          }
+        ],
+        "route_21": [
+          {
+            "id": "21-1",
+            "name": "拒马桥扫描",
+            "taskType": "点位扫描",
+            "type": ["桥梁巡检"],
+            "route": "单程5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "P-002",
+            "time_window": ["09:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机B",
+            "drone_id":"uav6",
+            "preset3d":"route_21",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "21-2",
+            "name": "拒马桥扫描",
+            "taskType": "点位扫描",
+            "type": ["桥梁巡检"],
+            "route": "单程5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "P-002",
+            "time_window": ["09:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机B",
+            "drone_id":"uav6",
+            "preset3d":"route_21",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ],
+        "route_6": [
+          {
+            "id": "6-1",
+            "name": "徐水-保定北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程21km",
+            "takeoff": "徐水收费站",
+            "route_id": "R-003",
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机C",
+            "drone_id":"uav1",
+            "flightCount":"3",
+            "preset3d":"route_6",
+            "status":"已完成",
+            "exec_at":"6"
+          },
+          {
+            "id": "6-2",
+            "name": "徐水-保定北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程21km",
+            "takeoff": "徐水收费站",
+            "route_id": "R-003",
+            "time_window": ["10:00","12:00"],
+            "expectedFinish":"3",
+            "actualFinish":"",
+            "drone":"执勤无人机C",
+            "drone_id":"uav1",
+            "flightCount":"3",
+            "preset3d":"route_6",
+            "status":"已完成",
+            "exec_at":"5"
+          }
+        ],
+        "route_7": [
+          {
+            "id": "7-1",
+            "name": "保定-保定北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别"],
+            "route": "单程7km",
+            "takeoff": "保定收费站",
+            "route_id": "R-004",
+            "time_window": ["08:00","08:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机D",
+            "drone_id":"uav2",
+            "preset3d":"route_7",
+            "status":"已完成",
+            "exec_at":"5"
+          }
+        ],
+        "route_8": [
+          {
+            "id": "8-1",
+            "name": "保定-清苑巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别"],
+            "route": "单程23km",
+            "takeoff": "清苑收费站",
+            "route_id": "R-005",
+            "flightCount":"3",
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机E",
+            "drone_id":"uav3",
+            "preset3d":"route_8",
+            "status":"已完成",
+            "exec_at":"1"
+          }
+        ],
+        "route_9": [
+          {
+            "id": "9-1",
+            "name": "清苑-望都巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程27km",
+            "takeoff": "清苑收费站",
+            "route_id": "P-002",
+            "time_window": ["11:00","14:00"],
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机F",
+            "drone_id":"uav4",
+            "preset3d":"route_9",
+            "status":"已完成",
+            "exec_at":"3"
+          },
+          {
+            "id": "9-2",
+            "name": "清苑-望都巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程27km",
+            "takeoff": "清苑收费站",
+            "route_id": "P-002",
+            "time_window": ["12:00","14:00"],
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机F",
+            "drone_id":"uav4",
+            "preset3d":"route_9",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_0": [
+          {
+            "id": "0-1",
+            "name": "杜家坎-琉璃河巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程32km",
+            "takeoff": "杜家坎收费站",
+            "route_id": "R-000",
+            "preset3d": "route_0",
+            "status":"已完成",
+            "exec_at":"1"
+          }
+        ],
+        "route_2": [
+          {
+            "id": "2-1",
+            "name": "涿州北-涿州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别","拥堵点检测"],
+            "route": "单程6.3km",
+            "takeoff": "涿州北收费站",
+            "route_id": "R-002",
+            "preset3d": "route_2",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "2-2",
+            "name": "涿州北-涿州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别","拥堵点检测"],
+            "route": "单程6.3km",
+            "takeoff": "涿州北收费站",
+            "route_id": "R-002",
+            "preset3d": "route_2",
+            "status":"已完成",
+            "exec_at":"1"
+          }
+        ],
+        "route_3": [
+          {
+            "id": "3-1",
+            "name": "涿州-高碑店巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程23km",
+            "takeoff": "涿州收费站",
+            "route_id": "R-003A",
+            "preset3d": "route_3",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ],
+        "route_4": [
+          {
+            "id": "4-1",
+            "name": "高碑店-定兴巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程16km",
+            "takeoff": "高碑店收费站",
+            "route_id": "R-004A",
+            "preset3d": "route_4",
+            "status":"已完成",
+            "exec_at":"7"
+          },
+          {
+            "id": "4-2",
+            "name": "高碑店-定兴巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别"],
+            "route": "单程16km",
+            "takeoff": "高碑店收费站",
+            "route_id": "R-004A",
+            "preset3d": "route_4",
+            "status":"已完成",
+            "exec_at":"7"
+          }
+        ],
+        "route_5": [
+          {
+            "id": "5-1",
+            "name": "定兴-徐水巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别"],
+            "route": "单程23km",
+            "takeoff": "定兴收费站",
+            "route_id": "R-005A",
+            "preset3d": "route_5",
+            "status":"已完成",
+            "exec_at":"1"
+          }
+        ],
+        "route_10": [
+          {
+            "id": "10-1",
+            "name": "望都-定州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程22km",
+            "takeoff": "望都收费站",
+            "route_id": "R-010",
+            "preset3d": "route_10",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "10-2",
+            "name": "望都-定州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程22km",
+            "takeoff": "望都收费站",
+            "route_id": "R-010",
+            "preset3d": "route_10",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_11": [
+          {
+            "id": "11-1",
+            "name": "定州-新乐巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程38km",
+            "takeoff": "定州收费站",
+            "route_id": "R-011",
+            "preset3d": "route_11",
+            "status":"已完成",
+            "exec_at":"2"
+          },
+          {
+            "id": "11-2",
+            "name": "定州-新乐巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程38km",
+            "takeoff": "定州收费站",
+            "route_id": "R-011",
+            "preset3d": "route_11",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_12": [
+          {
+            "id": "12-1",
+            "name": "新乐-藁城北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程22km",
+            "takeoff": "新乐收费站",
+            "route_id": "R-012",
+            "preset3d": "route_12",
+            "status":"已完成",
+            "exec_at":"6"
+          },
+          {
+            "id": "12-2",
+            "name": "新乐-藁城北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程22km",
+            "takeoff": "新乐收费站",
+            "route_id": "R-012",
+            "preset3d": "route_12",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ],
+        "route_13": [
+          {
+            "id": "13-1",
+            "name": "藁城北-石家庄机场巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程16km",
+            "takeoff": "藁城北收费站",
+            "route_id": "R-013",
+            "preset3d": "route_13",
+            "status":"已完成",
+            "exec_at":"2"
+          },
+          {
+            "id": "13-2",
+            "name": "藁城北-石家庄机场巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","拥堵点检测"],
+            "route": "单程16km",
+            "takeoff": "藁城北收费站",
+            "route_id": "R-013",
+            "preset3d": "route_13",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_14": [
+          {
+            "id": "14-1",
+            "name": "石家庄机场-石家庄北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别","拥堵点检测"],
+            "route": "单程18km",
+            "takeoff": "石家庄机场",
+            "route_id": "R-014",
+            "preset3d": "route_14",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "14-2",
+            "name": "石家庄机场-石家庄北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别","拥堵点检测"],
+            "route": "单程18km",
+            "takeoff": "石家庄机场",
+            "route_id": "R-014",
+            "preset3d": "route_14",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ]
+      }
+    },
+    "2025-W35": {
+      "rules": {
+        "route_0":  { "require_min_weekly": 3, "require_by_weekday": { "1": 1, "3": 1 } },
+        "route_1":  { "require_min_weekly": 2, "require_by_weekday": { "7": 1, "3": 1 } },
+        "route_2":  { "require_min_weekly": 2, "require_by_weekday": {"6": 2} },
+        "route_3":  { "require_min_weekly": 3, "require_by_weekday": {"2": 1} },
+        "route_4":  { "require_min_weekly": 4, "require_by_weekday": {"7": 2} },
+        "route_5":  { "require_min_weekly": 2, "require_by_weekday": {"1": 2} },
+        "route_21": { "require_min_weekly": 2, "require_by_weekday": {"1": 1} },
+        "route_6":  { "require_min_weekly": 1, "require_by_weekday": { "6": 1 } },
+        "route_9":  { "require_min_weekly": 2, "require_by_weekday": {} },
+        "route_7":  { "require_min_weekly": 1, "require_by_weekday": {} },
+        "route_8":  { "require_min_weekly": 2, "require_by_weekday": {"1": 1} },
+        "route_10":  { "require_min_weekly": 2, "require_by_weekday": {"1": 1} },
+        "route_11":  { "require_min_weekly": 2, "require_by_weekday": {"2": 1} },
+        "route_12":  { "require_min_weekly": 2, "require_by_weekday": {"6": 1} },
+        "route_13":  { "require_min_weekly": 2, "require_by_weekday": {"2": 1} },
+        "route_14":  { "require_min_weekly": 2, "require_by_weekday": {} }
+      },
+      "subset": {
+        "route_1": [
+          {
+            "id": "1-1",
+            "name": "琉璃河-涿州北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾检测"],
+            "route": "单程9.5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "R-001A",
+            "time_window": ["08:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机A",
+            "drone_id":"uav4",
+            "flightCount":"1.5",
+            "preset3d":"route_1",
+            "status":"已完成",
+            "exec_at":"3"
+          },
+          {
+            "id": "1-2",
+            "name": "琉璃河-涿州北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","拥堵点检测"],
+            "route": "单程9.5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "R-001B",
+            "time_window": ["08:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机A",
+            "drone_id":"uav4",
+            "flightCount":"1.5",
+            "preset3d":"route_1",
+            "status":"已完成",
+            "exec_at":"7"
+          }
+        ],
+        "route_21": [
+          {
+            "id": "21-1",
+            "name": "拒马桥扫描",
+            "taskType": "点位扫描",
+            "type": ["桥梁巡检"],
+            "route": "单程5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "P-002",
+            "time_window": ["09:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机B",
+            "drone_id":"uav6",
+            "preset3d":"route_21",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "21-2",
+            "name": "拒马桥扫描",
+            "taskType": "点位扫描",
+            "type": ["桥梁巡检"],
+            "route": "单程5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "P-002",
+            "time_window": ["09:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机B",
+            "drone_id":"uav6",
+            "preset3d":"route_21",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ],
+        "route_6": [
+          {
+            "id": "6-1",
+            "name": "徐水-保定北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程21km",
+            "takeoff": "徐水收费站",
+            "route_id": "R-003",
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机C",
+            "drone_id":"uav1",
+            "flightCount":"3",
+            "preset3d":"route_6",
+            "status":"已完成",
+            "exec_at":"6"
+          }
+        ],
+        "route_7": [
+          {
+            "id": "7-1",
+            "name": "保定-保定北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别"],
+            "route": "单程7km",
+            "takeoff": "保定收费站",
+            "route_id": "R-004",
+            "time_window": ["08:00","08:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机D",
+            "drone_id":"uav2",
+            "preset3d":"route_7",
+            "status":"已完成",
+            "exec_at":"5"
+          }
+        ],
+        "route_8": [
+          {
+            "id": "8-1",
+            "name": "保定-清苑巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别"],
+            "route": "单程23km",
+            "takeoff": "清苑收费站",
+            "route_id": "R-005",
+            "flightCount":"3",
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机E",
+            "drone_id":"uav3",
+            "preset3d":"route_8",
+            "status":"已完成",
+            "exec_at":"4"
+          },
+          {
+            "id": "8-2",
+            "name": "保定-清苑巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别"],
+            "route": "单程23km",
+            "takeoff": "清苑收费站",
+            "route_id": "R-005",
+            "time_window": ["13:00","15:00"],
+            "flightCount":"3",
+            "expectedFinish":"3",
+            "actualFinish":"",
+            "drone":"执勤无人机E",
+            "drone_id":"uav3",
+            "preset3d":"route_8",
+            "status":"已完成",
+            "exec_at":"1"
+          }
+        ],
+        "route_9": [
+          {
+            "id": "9-1",
+            "name": "清苑-望都巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程27km",
+            "takeoff": "清苑收费站",
+            "route_id": "P-002",
+            "time_window": ["11:00","14:00"],
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机F",
+            "drone_id":"uav4",
+            "preset3d":"route_9",
+            "status":"已完成",
+            "exec_at":"3"
+          },
+          {
+            "id": "9-2",
+            "name": "清苑-望都巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程27km",
+            "takeoff": "清苑收费站",
+            "route_id": "P-002",
+            "time_window": ["12:00","14:00"],
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机F",
+            "drone_id":"uav4",
+            "preset3d":"route_9",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_0": [
+          {
+            "id": "0-1",
+            "name": "杜家坎-琉璃河巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程32km",
+            "takeoff": "杜家坎收费站",
+            "route_id": "R-000",
+            "preset3d": "route_0",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "0-2",
+            "name": "杜家坎-琉璃河巡检",
+            "taskType": "线路扫描",
+            "type": ["病害识别"],
+            "route": "单程32km",
+            "takeoff": "杜家坎收费站",
+            "route_id": "R-000",
+            "preset3d": "route_0",
+            "status":"已完成",
+            "exec_at":"3"
+          },
+          {
+            "id": "0-3",
+            "name": "杜家坎-琉璃河巡检",
+            "taskType": "线路扫描",
+            "type": ["病害识别"],
+            "route": "单程32km",
+            "takeoff": "杜家坎收费站",
+            "route_id": "R-000",
+            "preset3d": "route_0",
+            "status":"已完成",
+            "exec_at":"7"
+          }
+        ],
+        "route_2": [
+          {
+            "id": "2-1",
+            "name": "涿州北-涿州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别","拥堵点检测"],
+            "route": "单程6.3km",
+            "takeoff": "涿州北收费站",
+            "route_id": "R-002",
+            "preset3d": "route_2",
+            "status":"已完成",
+            "exec_at":"6"
+          },
+          {
+            "id": "2-2",
+            "name": "涿州北-涿州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别","拥堵点检测"],
+            "route": "单程6.3km",
+            "takeoff": "涿州北收费站",
+            "route_id": "R-002",
+            "preset3d": "route_2",
+            "status":"已完成",
+            "exec_at":"6"
+          }
+        ],
+        "route_3": [
+          {
+            "id": "3-1",
+            "name": "涿州-高碑店巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程23km",
+            "takeoff": "涿州收费站",
+            "route_id": "R-003A",
+            "preset3d": "route_3",
+            "status":"已完成",
+            "exec_at":"2"
+          },
+          {
+            "id": "3-2",
+            "name": "涿州-高碑店巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程23km",
+            "takeoff": "涿州收费站",
+            "route_id": "R-003A",
+            "preset3d": "route_3",
+            "status":"已完成",
+            "exec_at":"2"
+          },
+          {
+            "id": "3-3",
+            "name": "涿州-高碑店巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程23km",
+            "takeoff": "涿州收费站",
+            "route_id": "R-003A",
+            "preset3d": "route_3",
+            "status":"已完成",
+            "exec_at":"7"
+          }
+        ],
+        "route_4": [
+          {
+            "id": "4-1",
+            "name": "高碑店-定兴巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程16km",
+            "takeoff": "高碑店收费站",
+            "route_id": "R-004A",
+            "preset3d": "route_4",
+            "status":"已完成",
+            "exec_at":"6"
+          },
+          {
+            "id": "4-2",
+            "name": "高碑店-定兴巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别"],
+            "route": "单程16km",
+            "takeoff": "高碑店收费站",
+            "route_id": "R-004A",
+            "preset3d": "route_4",
+            "status":"已完成",
+            "exec_at":"6"
+          },
+          {
+            "id": "4-3",
+            "name": "高碑店-定兴巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程16km",
+            "takeoff": "高碑店收费站",
+            "route_id": "R-004A",
+            "preset3d": "route_4",
+            "status":"已完成",
+            "exec_at":"7"
+          },
+          {
+            "id": "4-4",
+            "name": "高碑店-定兴巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别"],
+            "route": "单程16km",
+            "takeoff": "高碑店收费站",
+            "route_id": "R-004A",
+            "preset3d": "route_4",
+            "status":"已完成",
+            "exec_at":"7"
+          }
+        ],
+        "route_5": [
+          {
+            "id": "5-1",
+            "name": "定兴-徐水巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别"],
+            "route": "单程23km",
+            "takeoff": "定兴收费站",
+            "route_id": "R-005A",
+            "preset3d": "route_5",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "5-2",
+            "name": "定兴-徐水巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程23km",
+            "takeoff": "定兴收费站",
+            "route_id": "R-005A",
+            "preset3d": "route_5",
+            "status":"已完成",
+            "exec_at":"1"
+          }
+        ],
+        "route_10": [
+          {
+            "id": "10-1",
+            "name": "望都-定州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程22km",
+            "takeoff": "望都收费站",
+            "route_id": "R-010",
+            "preset3d": "route_10",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "10-2",
+            "name": "望都-定州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程22km",
+            "takeoff": "望都收费站",
+            "route_id": "R-010",
+            "preset3d": "route_10",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_11": [
+          {
+            "id": "11-1",
+            "name": "定州-新乐巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程38km",
+            "takeoff": "定州收费站",
+            "route_id": "R-011",
+            "preset3d": "route_11",
+            "status":"已完成",
+            "exec_at":"2"
+          },
+          {
+            "id": "11-2",
+            "name": "定州-新乐巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程38km",
+            "takeoff": "定州收费站",
+            "route_id": "R-011",
+            "preset3d": "route_11",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_12": [
+          {
+            "id": "12-1",
+            "name": "新乐-藁城北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程22km",
+            "takeoff": "新乐收费站",
+            "route_id": "R-012",
+            "preset3d": "route_12",
+            "status":"已完成",
+            "exec_at":"6"
+          },
+          {
+            "id": "12-2",
+            "name": "新乐-藁城北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程22km",
+            "takeoff": "新乐收费站",
+            "route_id": "R-012",
+            "preset3d": "route_12",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ],
+        "route_13": [
+          {
+            "id": "13-1",
+            "name": "藁城北-石家庄机场巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程16km",
+            "takeoff": "藁城北收费站",
+            "route_id": "R-013",
+            "preset3d": "route_13",
+            "status":"已完成",
+            "exec_at":"2"
+          },
+          {
+            "id": "13-2",
+            "name": "藁城北-石家庄机场巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","拥堵点检测"],
+            "route": "单程16km",
+            "takeoff": "藁城北收费站",
+            "route_id": "R-013",
+            "preset3d": "route_13",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_14": [
+          {
+            "id": "14-1",
+            "name": "石家庄机场-石家庄北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别","拥堵点检测"],
+            "route": "单程18km",
+            "takeoff": "石家庄机场",
+            "route_id": "R-014",
+            "preset3d": "route_14",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "14-2",
+            "name": "石家庄机场-石家庄北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别","拥堵点检测"],
+            "route": "单程18km",
+            "takeoff": "石家庄机场",
+            "route_id": "R-014",
+            "preset3d": "route_14",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ]
+      }
+    },
+    "2025-W36": {
+      "rules": {
+        "route_0":  { "require_min_weekly": 3, "require_by_weekday": { "1": 1, "3": 1 } },
+        "route_1":  { "require_min_weekly": 2, "require_by_weekday": { "7": 1, "3": 1 } },
+        "route_2":  { "require_min_weekly": 2, "require_by_weekday": {"1": 2} },
+        "route_3":  { "require_min_weekly": 2, "require_by_weekday": {"2": 1} },
+        "route_4":  { "require_min_weekly": 2, "require_by_weekday": {"6": 2} },
+        "route_5":  { "require_min_weekly": 2, "require_by_weekday": {"1": 2} },
+        "route_21": { "require_min_weekly": 2, "require_by_weekday": {"1": 1} },
+        "route_6":  { "require_min_weekly": 1, "require_by_weekday": { "6": 1 } },
+        "route_9":  { "require_min_weekly": 2, "require_by_weekday": {} },
+        "route_7":  { "require_min_weekly": 1, "require_by_weekday": {} },
+        "route_8":  { "require_min_weekly": 2, "require_by_weekday": {"1": 1} },
+        "route_10":  { "require_min_weekly": 2, "require_by_weekday": {"1": 1} },
+        "route_11":  { "require_min_weekly": 2, "require_by_weekday": {"2": 1} },
+        "route_12":  { "require_min_weekly": 2, "require_by_weekday": {"6": 1} },
+        "route_13":  { "require_min_weekly": 2, "require_by_weekday": {"2": 1} },
+        "route_14":  { "require_min_weekly": 2, "require_by_weekday": {} }
+      },
+      "subset": {
+        "route_1": [
+          {
+            "id": "1-1",
+            "name": "琉璃河-涿州北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾检测"],
+            "route": "单程9.5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "R-001A",
+            "time_window": ["08:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机A",
+            "drone_id":"uav4",
+            "flightCount":"1.5",
+            "preset3d":"route_1",
+            "status":"已完成",
+            "exec_at":"3"
+          },
+          {
+            "id": "1-2",
+            "name": "琉璃河-涿州北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","拥堵点检测"],
+            "route": "单程9.5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "R-001B",
+            "time_window": ["08:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机A",
+            "drone_id":"uav4",
+            "flightCount":"1.5",
+            "preset3d":"route_1",
+            "status":"已完成",
+            "exec_at":"7"
+          }
+        ],
+        "route_21": [
+          {
+            "id": "21-1",
+            "name": "拒马桥扫描",
+            "taskType": "点位扫描",
+            "type": ["桥梁巡检"],
+            "route": "单程5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "P-002",
+            "time_window": ["09:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机B",
+            "drone_id":"uav6",
+            "preset3d":"route_21",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "21-2",
+            "name": "拒马桥扫描",
+            "taskType": "点位扫描",
+            "type": ["桥梁巡检"],
+            "route": "单程5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "P-002",
+            "time_window": ["09:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机B",
+            "drone_id":"uav6",
+            "preset3d":"route_21",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ],
+        "route_6": [
+          {
+            "id": "6-1",
+            "name": "徐水-保定北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程21km",
+            "takeoff": "徐水收费站",
+            "route_id": "R-003",
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机C",
+            "drone_id":"uav1",
+            "flightCount":"3",
+            "preset3d":"route_6",
+            "status":"已完成",
+            "exec_at":"6"
+          }
+        ],
+        "route_7": [
+          {
+            "id": "7-1",
+            "name": "保定-保定北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别"],
+            "route": "单程7km",
+            "takeoff": "保定收费站",
+            "route_id": "R-004",
+            "time_window": ["08:00","08:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机D",
+            "drone_id":"uav2",
+            "preset3d":"route_7",
+            "status":"已完成",
+            "exec_at":"5"
+          }
+        ],
+        "route_8": [
+          {
+            "id": "8-1",
+            "name": "保定-清苑巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别"],
+            "route": "单程23km",
+            "takeoff": "清苑收费站",
+            "route_id": "R-005",
+            "flightCount":"3",
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机E",
+            "drone_id":"uav3",
+            "preset3d":"route_8",
+            "status":"已完成",
+            "exec_at":"4"
+          },
+          {
+            "id": "8-2",
+            "name": "保定-清苑巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别"],
+            "route": "单程23km",
+            "takeoff": "清苑收费站",
+            "route_id": "R-005",
+            "time_window": ["13:00","15:00"],
+            "flightCount":"3",
+            "expectedFinish":"3",
+            "actualFinish":"",
+            "drone":"执勤无人机E",
+            "drone_id":"uav3",
+            "preset3d":"route_8",
+            "status":"已完成",
+            "exec_at":"1"
+          }
+        ],
+        "route_9": [
+          {
+            "id": "9-1",
+            "name": "清苑-望都巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程27km",
+            "takeoff": "清苑收费站",
+            "route_id": "P-002",
+            "time_window": ["11:00","14:00"],
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机F",
+            "drone_id":"uav4",
+            "preset3d":"route_9",
+            "status":"已完成",
+            "exec_at":"3"
+          },
+          {
+            "id": "9-2",
+            "name": "清苑-望都巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程27km",
+            "takeoff": "清苑收费站",
+            "route_id": "P-002",
+            "time_window": ["12:00","14:00"],
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机F",
+            "drone_id":"uav4",
+            "preset3d":"route_9",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_0": [
+          {
+            "id": "0-1",
+            "name": "杜家坎-琉璃河巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程32km",
+            "takeoff": "杜家坎收费站",
+            "route_id": "R-000",
+            "preset3d": "route_0",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "0-2",
+            "name": "杜家坎-琉璃河巡检",
+            "taskType": "线路扫描",
+            "type": ["病害识别"],
+            "route": "单程32km",
+            "takeoff": "杜家坎收费站",
+            "route_id": "R-000",
+            "preset3d": "route_0",
+            "status":"已完成",
+            "exec_at":"3"
+          },
+          {
+            "id": "0-3",
+            "name": "杜家坎-琉璃河巡检",
+            "taskType": "线路扫描",
+            "type": ["病害识别"],
+            "route": "单程32km",
+            "takeoff": "杜家坎收费站",
+            "route_id": "R-000",
+            "preset3d": "route_0",
+            "status":"已完成",
+            "exec_at":"7"
+          }
+        ],
+        "route_2": [
+          {
+            "id": "2-1",
+            "name": "涿州北-涿州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别","拥堵点检测"],
+            "route": "单程6.3km",
+            "takeoff": "涿州北收费站",
+            "route_id": "R-002",
+            "preset3d": "route_2",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "2-2",
+            "name": "涿州北-涿州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别","拥堵点检测"],
+            "route": "单程6.3km",
+            "takeoff": "涿州北收费站",
+            "route_id": "R-002",
+            "preset3d": "route_2",
+            "status":"已完成",
+            "exec_at":"1"
+          }
+        ],
+        "route_3": [
+          {
+            "id": "3-1",
+            "name": "涿州-高碑店巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程23km",
+            "takeoff": "涿州收费站",
+            "route_id": "R-003A",
+            "preset3d": "route_3",
+            "status":"已完成",
+            "exec_at":"2"
+          },
+          {
+            "id": "3-2",
+            "name": "涿州-高碑店巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程23km",
+            "takeoff": "涿州收费站",
+            "route_id": "R-003A",
+            "preset3d": "route_3",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ],
+        "route_4": [
+          {
+            "id": "4-1",
+            "name": "高碑店-定兴巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程16km",
+            "takeoff": "高碑店收费站",
+            "route_id": "R-004A",
+            "preset3d": "route_4",
+            "status":"已完成",
+            "exec_at":"6"
+          },
+          {
+            "id": "4-2",
+            "name": "高碑店-定兴巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别"],
+            "route": "单程16km",
+            "takeoff": "高碑店收费站",
+            "route_id": "R-004A",
+            "preset3d": "route_4",
+            "status":"已完成",
+            "exec_at":"6"
+          }
+        ],
+        "route_5": [
+          {
+            "id": "5-1",
+            "name": "定兴-徐水巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别"],
+            "route": "单程23km",
+            "takeoff": "定兴收费站",
+            "route_id": "R-005A",
+            "preset3d": "route_5",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "5-2",
+            "name": "定兴-徐水巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程23km",
+            "takeoff": "定兴收费站",
+            "route_id": "R-005A",
+            "preset3d": "route_5",
+            "status":"已完成",
+            "exec_at":"1"
+          }
+        ],
+        "route_10": [
+          {
+            "id": "10-1",
+            "name": "望都-定州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程22km",
+            "takeoff": "望都收费站",
+            "route_id": "R-010",
+            "preset3d": "route_10",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "10-2",
+            "name": "望都-定州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程22km",
+            "takeoff": "望都收费站",
+            "route_id": "R-010",
+            "preset3d": "route_10",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_11": [
+          {
+            "id": "11-1",
+            "name": "定州-新乐巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程38km",
+            "takeoff": "定州收费站",
+            "route_id": "R-011",
+            "preset3d": "route_11",
+            "status":"已完成",
+            "exec_at":"2"
+          },
+          {
+            "id": "11-2",
+            "name": "定州-新乐巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程38km",
+            "takeoff": "定州收费站",
+            "route_id": "R-011",
+            "preset3d": "route_11",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_12": [
+          {
+            "id": "12-1",
+            "name": "新乐-藁城北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程22km",
+            "takeoff": "新乐收费站",
+            "route_id": "R-012",
+            "preset3d": "route_12",
+            "status":"已完成",
+            "exec_at":"6"
+          },
+          {
+            "id": "12-2",
+            "name": "新乐-藁城北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程22km",
+            "takeoff": "新乐收费站",
+            "route_id": "R-012",
+            "preset3d": "route_12",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ],
+        "route_13": [
+          {
+            "id": "13-1",
+            "name": "藁城北-石家庄机场巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程16km",
+            "takeoff": "藁城北收费站",
+            "route_id": "R-013",
+            "preset3d": "route_13",
+            "status":"已完成",
+            "exec_at":"2"
+          },
+          {
+            "id": "13-2",
+            "name": "藁城北-石家庄机场巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","拥堵点检测"],
+            "route": "单程16km",
+            "takeoff": "藁城北收费站",
+            "route_id": "R-013",
+            "preset3d": "route_13",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_14": [
+          {
+            "id": "14-1",
+            "name": "石家庄机场-石家庄北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别","拥堵点检测"],
+            "route": "单程18km",
+            "takeoff": "石家庄机场",
+            "route_id": "R-014",
+            "preset3d": "route_14",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "14-2",
+            "name": "石家庄机场-石家庄北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别","拥堵点检测"],
+            "route": "单程18km",
+            "takeoff": "石家庄机场",
+            "route_id": "R-014",
+            "preset3d": "route_14",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ]
+      }
+    },
+    "2025-W37": {
+      "rules": {
+        "route_0":  { "require_min_weekly": 2, "require_by_weekday": { "1": 1, "3": 1 } },
+        "route_1":  { "require_min_weekly": 2, "require_by_weekday": { "6": 1, "3": 1 } },
+        "route_2":  { "require_min_weekly": 2, "require_by_weekday": {"1": 2} },
+        "route_3":  { "require_min_weekly": 1, "require_by_weekday": {"2": 1} },
+        "route_4":  { "require_min_weekly": 2, "require_by_weekday": {"7": 2} },
+        "route_5":  { "require_min_weekly": 2, "require_by_weekday": {"1": 2} },
+        "route_21": { "require_min_weekly": 2, "require_by_weekday": {"1": 1} },
+        "route_6":  { "require_min_weekly": 2, "require_by_weekday": { "6": 1 } },
+        "route_9":  { "require_min_weekly": 2, "require_by_weekday": {} },
+        "route_7":  { "require_min_weekly": 1, "require_by_weekday": {} },
+        "route_8":  { "require_min_weekly": 2, "require_by_weekday": {"1": 1} },
+        "route_10":  { "require_min_weekly": 2, "require_by_weekday": {"1": 1} },
+        "route_11":  { "require_min_weekly": 2, "require_by_weekday": {"2": 1} },
+        "route_12":  { "require_min_weekly": 2, "require_by_weekday": {"6": 1} },
+        "route_13":  { "require_min_weekly": 2, "require_by_weekday": {"2": 1} },
+        "route_14":  { "require_min_weekly": 2, "require_by_weekday": {} }
+      },
+      "subset": {
+        "route_1": [
+          {
+            "id": "1-1",
+            "name": "琉璃河-涿州北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾检测"],
+            "route": "单程9.5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "R-001A",
+            "time_window": ["08:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机A",
+            "drone_id":"uav4",
+            "flightCount":"1.5",
+            "preset3d":"route_1",
+            "status":"已完成",
+            "exec_at":"3"
+          },
+          {
+            "id": "1-2",
+            "name": "琉璃河-涿州北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","拥堵点检测"],
+            "route": "单程9.5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "R-001B",
+            "time_window": ["08:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机A",
+            "drone_id":"uav4",
+            "flightCount":"1.5",
+            "preset3d":"route_1",
+            "status":"已完成",
+            "exec_at":"6"
+          }
+        ],
+        "route_21": [
+          {
+            "id": "21-1",
+            "name": "拒马桥扫描",
+            "taskType": "点位扫描",
+            "type": ["桥梁巡检"],
+            "route": "单程5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "P-002",
+            "time_window": ["09:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机B",
+            "drone_id":"uav6",
+            "preset3d":"route_21",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "21-2",
+            "name": "拒马桥扫描",
+            "taskType": "点位扫描",
+            "type": ["桥梁巡检"],
+            "route": "单程5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "P-002",
+            "time_window": ["09:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机B",
+            "drone_id":"uav6",
+            "preset3d":"route_21",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ],
+        "route_6": [
+          {
+            "id": "6-1",
+            "name": "徐水-保定北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程21km",
+            "takeoff": "徐水收费站",
+            "route_id": "R-003",
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机C",
+            "drone_id":"uav1",
+            "flightCount":"3",
+            "preset3d":"route_6",
+            "status":"已完成",
+            "exec_at":"6"
+          },
+          {
+            "id": "6-2",
+            "name": "徐水-保定北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程21km",
+            "takeoff": "徐水收费站",
+            "route_id": "R-003",
+            "time_window": ["10:00","12:00"],
+            "expectedFinish":"3",
+            "actualFinish":"",
+            "drone":"执勤无人机C",
+            "drone_id":"uav1",
+            "flightCount":"3",
+            "preset3d":"route_6",
+            "status":"已完成",
+            "exec_at":"5"
+          }
+        ],
+        "route_7": [
+          {
+            "id": "7-1",
+            "name": "保定-保定北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别"],
+            "route": "单程7km",
+            "takeoff": "保定收费站",
+            "route_id": "R-004",
+            "time_window": ["08:00","08:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机D",
+            "drone_id":"uav2",
+            "preset3d":"route_7",
+            "status":"已完成",
+            "exec_at":"5"
+          }
+        ],
+        "route_8": [
+          {
+            "id": "8-1",
+            "name": "保定-清苑巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别"],
+            "route": "单程23km",
+            "takeoff": "清苑收费站",
+            "route_id": "R-005",
+            "flightCount":"3",
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机E",
+            "drone_id":"uav3",
+            "preset3d":"route_8",
+            "status":"已完成",
+            "exec_at":"4"
+          },
+          {
+            "id": "8-2",
+            "name": "保定-清苑巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别"],
+            "route": "单程23km",
+            "takeoff": "清苑收费站",
+            "route_id": "R-005",
+            "time_window": ["13:00","15:00"],
+            "flightCount":"3",
+            "expectedFinish":"3",
+            "actualFinish":"",
+            "drone":"执勤无人机E",
+            "drone_id":"uav3",
+            "preset3d":"route_8",
+            "status":"已完成",
+            "exec_at":"1"
+          }
+        ],
+        "route_9": [
+          {
+            "id": "9-1",
+            "name": "清苑-望都巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程27km",
+            "takeoff": "清苑收费站",
+            "route_id": "P-002",
+            "time_window": ["11:00","14:00"],
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机F",
+            "drone_id":"uav4",
+            "preset3d":"route_9",
+            "status":"已完成",
+            "exec_at":"3"
+          },
+          {
+            "id": "9-2",
+            "name": "清苑-望都巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程27km",
+            "takeoff": "清苑收费站",
+            "route_id": "P-002",
+            "time_window": ["12:00","14:00"],
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机F",
+            "drone_id":"uav4",
+            "preset3d":"route_9",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_0": [
+          {
+            "id": "0-1",
+            "name": "杜家坎-琉璃河巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程32km",
+            "takeoff": "杜家坎收费站",
+            "route_id": "R-000",
+            "preset3d": "route_0",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "0-2",
+            "name": "杜家坎-琉璃河巡检",
+            "taskType": "线路扫描",
+            "type": ["病害识别"],
+            "route": "单程32km",
+            "takeoff": "杜家坎收费站",
+            "route_id": "R-000",
+            "preset3d": "route_0",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_2": [
+          {
+            "id": "2-1",
+            "name": "涿州北-涿州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别","拥堵点检测"],
+            "route": "单程6.3km",
+            "takeoff": "涿州北收费站",
+            "route_id": "R-002",
+            "preset3d": "route_2",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "2-2",
+            "name": "涿州北-涿州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别","拥堵点检测"],
+            "route": "单程6.3km",
+            "takeoff": "涿州北收费站",
+            "route_id": "R-002",
+            "preset3d": "route_2",
+            "status":"已完成",
+            "exec_at":"1"
+          }
+        ],
+        "route_3": [
+          {
+            "id": "3-1",
+            "name": "涿州-高碑店巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程23km",
+            "takeoff": "涿州收费站",
+            "route_id": "R-003A",
+            "preset3d": "route_3",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ],
+        "route_4": [
+          {
+            "id": "4-1",
+            "name": "高碑店-定兴巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程16km",
+            "takeoff": "高碑店收费站",
+            "route_id": "R-004A",
+            "preset3d": "route_4",
+            "status":"已完成",
+            "exec_at":"7"
+          },
+          {
+            "id": "4-2",
+            "name": "高碑店-定兴巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别"],
+            "route": "单程16km",
+            "takeoff": "高碑店收费站",
+            "route_id": "R-004A",
+            "preset3d": "route_4",
+            "status":"已完成",
+            "exec_at":"7"
+          }
+        ],
+        "route_5": [
+          {
+            "id": "5-1",
+            "name": "定兴-徐水巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别"],
+            "route": "单程23km",
+            "takeoff": "定兴收费站",
+            "route_id": "R-005A",
+            "preset3d": "route_5",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "5-2",
+            "name": "定兴-徐水巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程23km",
+            "takeoff": "定兴收费站",
+            "route_id": "R-005A",
+            "preset3d": "route_5",
+            "status":"已完成",
+            "exec_at":"1"
+          }
+        ],
+        "route_10": [
+          {
+            "id": "10-1",
+            "name": "望都-定州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程22km",
+            "takeoff": "望都收费站",
+            "route_id": "R-010",
+            "preset3d": "route_10",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "10-2",
+            "name": "望都-定州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程22km",
+            "takeoff": "望都收费站",
+            "route_id": "R-010",
+            "preset3d": "route_10",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_11": [
+          {
+            "id": "11-1",
+            "name": "定州-新乐巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程38km",
+            "takeoff": "定州收费站",
+            "route_id": "R-011",
+            "preset3d": "route_11",
+            "status":"已完成",
+            "exec_at":"2"
+          },
+          {
+            "id": "11-2",
+            "name": "定州-新乐巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程38km",
+            "takeoff": "定州收费站",
+            "route_id": "R-011",
+            "preset3d": "route_11",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_12": [
+          {
+            "id": "12-1",
+            "name": "新乐-藁城北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程22km",
+            "takeoff": "新乐收费站",
+            "route_id": "R-012",
+            "preset3d": "route_12",
+            "status":"已完成",
+            "exec_at":"6"
+          },
+          {
+            "id": "12-2",
+            "name": "新乐-藁城北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程22km",
+            "takeoff": "新乐收费站",
+            "route_id": "R-012",
+            "preset3d": "route_12",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ],
+        "route_13": [
+          {
+            "id": "13-1",
+            "name": "藁城北-石家庄机场巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程16km",
+            "takeoff": "藁城北收费站",
+            "route_id": "R-013",
+            "preset3d": "route_13",
+            "status":"已完成",
+            "exec_at":"2"
+          },
+          {
+            "id": "13-2",
+            "name": "藁城北-石家庄机场巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","拥堵点检测"],
+            "route": "单程16km",
+            "takeoff": "藁城北收费站",
+            "route_id": "R-013",
+            "preset3d": "route_13",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_14": [
+          {
+            "id": "14-1",
+            "name": "石家庄机场-石家庄北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别","拥堵点检测"],
+            "route": "单程18km",
+            "takeoff": "石家庄机场",
+            "route_id": "R-014",
+            "preset3d": "route_14",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "14-2",
+            "name": "石家庄机场-石家庄北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别","拥堵点检测"],
+            "route": "单程18km",
+            "takeoff": "石家庄机场",
+            "route_id": "R-014",
+            "preset3d": "route_14",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ]
+      }
+    },
+    "2025-W38": {
+      "rules": {
+        "route_0":  { "require_min_weekly": 4, "require_by_weekday": { "1": 2, "6": 2 } },
+        "route_1":  { "require_min_weekly": 3, "require_by_weekday": { "1": 2, "3": 1 } },
+        "route_2":  { "require_min_weekly": 2, "require_by_weekday": {"1": 2} },
+        "route_3":  { "require_min_weekly": 2, "require_by_weekday": {"2": 1} },
+        "route_4":  { "require_min_weekly": 2, "require_by_weekday": {"2": 2} },
+        "route_5":  { "require_min_weekly": 2, "require_by_weekday": {"1": 2} },
+        "route_21": { "require_min_weekly": 2, "require_by_weekday": {"1": 1} },
+        "route_6":  { "require_min_weekly": 2, "require_by_weekday": { "5": 1 } },
+        "route_9":  { "require_min_weekly": 2, "require_by_weekday": {} },
+        "route_7":  { "require_min_weekly": 1, "require_by_weekday": {} },
+        "route_8":  { "require_min_weekly": 2, "require_by_weekday": {"1": 1} },
+        "route_10":  { "require_min_weekly": 2, "require_by_weekday": {"1": 1} },
+        "route_11":  { "require_min_weekly": 2, "require_by_weekday": {"2": 1} },
+        "route_12":  { "require_min_weekly": 3, "require_by_weekday": {} },
+        "route_13":  { "require_min_weekly": 2, "require_by_weekday": {"2": 1} },
+        "route_14":  { "require_min_weekly": 2, "require_by_weekday": {} }
+      },
+      "subset": {
+        "route_1": [
+          {
+            "id": "1-1",
+            "name": "琉璃河-涿州北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾检测"],
+            "route": "单程9.5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "R-001A",
+            "time_window": ["08:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机A",
+            "drone_id":"uav4",
+            "flightCount":"1.5",
+            "preset3d":"route_1",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "1-2",
+            "name": "琉璃河-涿州北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","拥堵点检测"],
+            "route": "单程9.5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "R-001B",
+            "time_window": ["08:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机A",
+            "drone_id":"uav4",
+            "flightCount":"1.5",
+            "preset3d":"route_1",
+            "status":"已完成",
+            "exec_at":"3"
+          },
+          {
+            "id": "1-3",
+            "name": "琉璃河-涿州北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾检测","病害识别","拥堵点检测"],
+            "route": "单程9.5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "R-001",
+            "time_window": ["08:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机A",
+            "drone_id":"uav4",
+            "flightCount":"1.5",
+            "preset3d":"route_1",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          
+          {
+            "id": "1-4",
+            "name": "琉璃河-涿州北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾检测"],
+            "route": "单程9.5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "R-001",
+            "time_window": ["08:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机A",
+            "drone_id":"uav4",
+            "flightCount":"1.5",
+            "preset3d":"route_1",
+            "status":"已完成",
+             "exec_at":"3"
+          }
+        ],
+        "route_21": [
+          {
+            "id": "21-1",
+            "name": "拒马桥扫描",
+            "taskType": "点位扫描",
+            "type": ["桥梁巡检"],
+            "route": "单程5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "P-002",
+            "time_window": ["09:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机B",
+            "drone_id":"uav6",
+            "preset3d":"route_21",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "21-2",
+            "name": "拒马桥扫描",
+            "taskType": "点位扫描",
+            "type": ["桥梁巡检"],
+            "route": "单程5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "P-002",
+            "time_window": ["09:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机B",
+            "drone_id":"uav6",
+            "preset3d":"route_21",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ],
+        "route_6": [
+          {
+            "id": "6-1",
+            "name": "徐水-保定北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程21km",
+            "takeoff": "徐水收费站",
+            "route_id": "R-003",
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机C",
+            "drone_id":"uav1",
+            "flightCount":"3",
+            "preset3d":"route_6",
+            "status":"已完成",
+            "exec_at":"5"
+          },
+          {
+            "id": "6-2",
+            "name": "徐水-保定北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程21km",
+            "takeoff": "徐水收费站",
+            "route_id": "R-003",
+            "time_window": ["10:00","12:00"],
+            "expectedFinish":"3",
+            "actualFinish":"",
+            "drone":"执勤无人机C",
+            "drone_id":"uav1",
+            "flightCount":"3",
+            "preset3d":"route_6",
+            "status":"已完成",
+            "exec_at":"5"
+          }
+        ],
+        "route_7": [
+          {
+            "id": "7-1",
+            "name": "保定-保定北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别"],
+            "route": "单程7km",
+            "takeoff": "保定收费站",
+            "route_id": "R-004",
+            "time_window": ["08:00","08:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机D",
+            "drone_id":"uav2",
+            "preset3d":"route_7",
+            "status":"已完成",
+            "exec_at":"5"
+          }
+        ],
+        "route_8": [
+          {
+            "id": "8-1",
+            "name": "保定-清苑巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别"],
+            "route": "单程23km",
+            "takeoff": "清苑收费站",
+            "route_id": "R-005",
+            "flightCount":"3",
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机E",
+            "drone_id":"uav3",
+            "preset3d":"route_8",
+            "status":"已完成",
+            "exec_at":"4"
+          },
+          {
+            "id": "8-2",
+            "name": "保定-清苑巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别"],
+            "route": "单程23km",
+            "takeoff": "清苑收费站",
+            "route_id": "R-005",
+            "time_window": ["13:00","15:00"],
+            "flightCount":"3",
+            "expectedFinish":"3",
+            "actualFinish":"",
+            "drone":"执勤无人机E",
+            "drone_id":"uav3",
+            "preset3d":"route_8",
+            "status":"已完成",
+            "exec_at":"1"
+          }
+        ],
+        "route_9": [
+          {
+            "id": "9-1",
+            "name": "清苑-望都巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程27km",
+            "takeoff": "清苑收费站",
+            "route_id": "P-002",
+            "time_window": ["11:00","14:00"],
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机F",
+            "drone_id":"uav4",
+            "preset3d":"route_9",
+            "status":"已完成",
+            "exec_at":"3"
+          },
+          {
+            "id": "9-2",
+            "name": "清苑-望都巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程27km",
+            "takeoff": "清苑收费站",
+            "route_id": "P-002",
+            "time_window": ["12:00","14:00"],
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机F",
+            "drone_id":"uav4",
+            "preset3d":"route_9",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_0": [
+          {
+            "id": "0-1",
+            "name": "杜家坎-琉璃河巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程32km",
+            "takeoff": "杜家坎收费站",
+            "route_id": "R-000",
+            "preset3d": "route_0",
+            "status":"已完成",
+            "exec_at":"6"
+          },
+          {
+            "id": "0-2",
+            "name": "杜家坎-琉璃河巡检",
+            "taskType": "线路扫描",
+            "type": ["团雾识别","病害识别"],
+            "route": "单程32km",
+            "takeoff": "杜家坎收费站",
+            "route_id": "R-000",
+            "preset3d": "route_0",
+            "status":"已完成",
+            "exec_at":"6"
+          },
+          {
+            "id": "0-3",
+            "name": "杜家坎-琉璃河巡检",
+            "taskType": "线路扫描",
+            "type": ["病害识别"],
+            "route": "单程32km",
+            "takeoff": "杜家坎收费站",
+            "route_id": "R-000",
+            "preset3d": "route_0",
+            "status":"已完成",
+            "exec_at":"3"
+          },
+          {
+            "id": "0-4",
+            "name": "杜家坎-琉璃河巡检",
+            "taskType": "线路扫描",
+            "type": ["病害识别"],
+            "route": "单程32km",
+            "takeoff": "杜家坎收费站",
+            "route_id": "R-000",
+            "preset3d": "route_0",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_2": [
+          {
+            "id": "2-1",
+            "name": "涿州北-涿州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别","拥堵点检测"],
+            "route": "单程6.3km",
+            "takeoff": "涿州北收费站",
+            "route_id": "R-002",
+            "preset3d": "route_2",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "2-2",
+            "name": "涿州北-涿州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别","拥堵点检测"],
+            "route": "单程6.3km",
+            "takeoff": "涿州北收费站",
+            "route_id": "R-002",
+            "preset3d": "route_2",
+            "status":"已完成",
+            "exec_at":"1"
+          }
+        ],
+        "route_3": [
+          {
+            "id": "3-1",
+            "name": "涿州-高碑店巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程23km",
+            "takeoff": "涿州收费站",
+            "route_id": "R-003A",
+            "preset3d": "route_3",
+            "status":"已完成",
+            "exec_at":"2"
+          },
+          {
+            "id": "3-2",
+            "name": "涿州-高碑店巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程23km",
+            "takeoff": "涿州收费站",
+            "route_id": "R-003A",
+            "preset3d": "route_3",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ],
+        "route_4": [
+          {
+            "id": "4-1",
+            "name": "高碑店-定兴巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程16km",
+            "takeoff": "高碑店收费站",
+            "route_id": "R-004A",
+            "preset3d": "route_4",
+            "status":"已完成",
+            "exec_at":"2"
+          },
+          {
+            "id": "4-2",
+            "name": "高碑店-定兴巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别"],
+            "route": "单程16km",
+            "takeoff": "高碑店收费站",
+            "route_id": "R-004A",
+            "preset3d": "route_4",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ],
+        "route_5": [
+          {
+            "id": "5-1",
+            "name": "定兴-徐水巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别"],
+            "route": "单程23km",
+            "takeoff": "定兴收费站",
+            "route_id": "R-005A",
+            "preset3d": "route_5",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "5-2",
+            "name": "定兴-徐水巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程23km",
+            "takeoff": "定兴收费站",
+            "route_id": "R-005A",
+            "preset3d": "route_5",
+            "status":"已完成",
+            "exec_at":"1"
+          }
+        ],
+        "route_10": [
+          {
+            "id": "10-1",
+            "name": "望都-定州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程22km",
+            "takeoff": "望都收费站",
+            "route_id": "R-010",
+            "preset3d": "route_10",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "10-2",
+            "name": "望都-定州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程22km",
+            "takeoff": "望都收费站",
+            "route_id": "R-010",
+            "preset3d": "route_10",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_11": [
+          {
+            "id": "11-1",
+            "name": "定州-新乐巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程38km",
+            "takeoff": "定州收费站",
+            "route_id": "R-011",
+            "preset3d": "route_11",
+            "status":"已完成",
+            "exec_at":"2"
+          },
+          {
+            "id": "11-2",
+            "name": "定州-新乐巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程38km",
+            "takeoff": "定州收费站",
+            "route_id": "R-011",
+            "preset3d": "route_11",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_12": [
+          {
+            "id": "12-1",
+            "name": "新乐-藁城北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程22km",
+            "takeoff": "新乐收费站",
+            "route_id": "R-012",
+            "preset3d": "route_12",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "12-2",
+            "name": "新乐-藁城北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程22km",
+            "takeoff": "新乐收费站",
+            "route_id": "R-012",
+            "preset3d": "route_12",
+            "status":"已完成",
+            "exec_at":"2"
+          },
+          {
+            "id": "12-3",
+            "name": "新乐-藁城北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","拥堵点检测"],
+            "route": "单程22km",
+            "takeoff": "新乐收费站",
+            "route_id": "R-012",
+            "preset3d": "route_12",
+            "status":"已完成",
+            "exec_at":"4"
+          }
+        ],
+        "route_13": [
+          {
+            "id": "13-1",
+            "name": "藁城北-石家庄机场巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程16km",
+            "takeoff": "藁城北收费站",
+            "route_id": "R-013",
+            "preset3d": "route_13",
+            "status":"已完成",
+            "exec_at":"2"
+          },
+          {
+            "id": "13-2",
+            "name": "藁城北-石家庄机场巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","拥堵点检测"],
+            "route": "单程16km",
+            "takeoff": "藁城北收费站",
+            "route_id": "R-013",
+            "preset3d": "route_13",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_14": [
+          {
+            "id": "14-1",
+            "name": "石家庄机场-石家庄北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别","拥堵点检测"],
+            "route": "单程18km",
+            "takeoff": "石家庄机场",
+            "route_id": "R-014",
+            "preset3d": "route_14",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "14-2",
+            "name": "石家庄机场-石家庄北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别","拥堵点检测"],
+            "route": "单程18km",
+            "takeoff": "石家庄机场",
+            "route_id": "R-014",
+            "preset3d": "route_14",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ]
+      }
+    },
+    "2025-W39": {
+      "rules": {
+        "route_0":  { "require_min_weekly": 4, "require_by_weekday": { "1": 2, "3": 2 } },
+        "route_1":  { "require_min_weekly": 3, "require_by_weekday": { "1": 2, "3": 1 } },
+        "route_2":  { "require_min_weekly": 2, "require_by_weekday": {"1": 2} },
+        "route_3":  { "require_min_weekly": 2, "require_by_weekday": {"2": 1} },
+        "route_4":  { "require_min_weekly": 2, "require_by_weekday": {"2": 2} },
+        "route_5":  { "require_min_weekly": 2, "require_by_weekday": {"1": 2} },
+        "route_21": { "require_min_weekly": 1, "require_by_weekday": {"1": 1} },
+        "route_6":  { "require_min_weekly": 2, "require_by_weekday": { "5": 1 } },
+        "route_9":  { "require_min_weekly": 2, "require_by_weekday": {} },
+        "route_7":  { "require_min_weekly": 1, "require_by_weekday": {} },
+        "route_8":  { "require_min_weekly": 2, "require_by_weekday": {"1": 1} },
+        "route_10":  { "require_min_weekly": 2, "require_by_weekday": {"1": 1} },
+        "route_11":  { "require_min_weekly": 2, "require_by_weekday": {"2": 1} },
+        "route_12":  { "require_min_weekly": 3, "require_by_weekday": {} },
+        "route_13":  { "require_min_weekly": 2, "require_by_weekday": {"2": 1} },
+        "route_14":  { "require_min_weekly": 2, "require_by_weekday": {} }
+      },
+      "subset": {
+        "route_1": [
+          {
+            "id": "1-1",
+            "name": "琉璃河-涿州北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾检测"],
+            "route": "单程9.5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "R-001A",
+            "time_window": ["08:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机A",
+            "drone_id":"uav4",
+            "flightCount":"1.5",
+            "preset3d":"route_1",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "1-2",
+            "name": "琉璃河-涿州北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","拥堵点检测"],
+            "route": "单程9.5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "R-001B",
+            "time_window": ["08:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机A",
+            "drone_id":"uav4",
+            "flightCount":"1.5",
+            "preset3d":"route_1",
+            "status":"已完成",
+            "exec_at":"3"
+          },
+          {
+            "id": "1-3",
+            "name": "琉璃河-涿州北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾检测","病害识别","拥堵点检测"],
+            "route": "单程9.5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "R-001",
+            "time_window": ["08:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机A",
+            "drone_id":"uav4",
+            "flightCount":"1.5",
+            "preset3d":"route_1",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          
+          {
+            "id": "1-4",
+            "name": "琉璃河-涿州北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾检测"],
+            "route": "单程9.5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "R-001",
+            "time_window": ["08:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机A",
+            "drone_id":"uav4",
+            "flightCount":"1.5",
+            "preset3d":"route_1",
+            "status":"已完成",
+             "exec_at":"3"
+          }
+        ],
+        "route_21": [
+          {
+            "id": "21-1",
+            "name": "拒马桥扫描",
+            "taskType": "点位扫描",
+            "type": ["桥梁巡检"],
+            "route": "单程5km",
+            "takeoff": "琉璃河收费站",
+            "route_id": "P-002",
+            "time_window": ["09:00","09:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机B",
+            "drone_id":"uav6",
+            "preset3d":"route_21",
+            "status":"待执行"
+          }
+        ],
+        "route_6": [
+          {
+            "id": "6-1",
+            "name": "徐水-保定北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程21km",
+            "takeoff": "徐水收费站",
+            "route_id": "R-003",
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机C",
+            "drone_id":"uav1",
+            "flightCount":"3",
+            "preset3d":"route_6",
+            "status":"已完成",
+            "exec_at":"5"
+          },
+          {
+            "id": "6-2",
+            "name": "徐水-保定北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程21km",
+            "takeoff": "徐水收费站",
+            "route_id": "R-003",
+            "time_window": ["10:00","12:00"],
+            "expectedFinish":"3",
+            "actualFinish":"",
+            "drone":"执勤无人机C",
+            "drone_id":"uav1",
+            "flightCount":"3",
+            "preset3d":"route_6",
+            "status":"待执行"
+          }
+        ],
+        "route_7": [
+          {
+            "id": "7-1",
+            "name": "保定-保定北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别"],
+            "route": "单程7km",
+            "takeoff": "保定收费站",
+            "route_id": "R-004",
+            "time_window": ["08:00","08:30"],
+            "expectedFinish":"1.5",
+            "actualFinish":"1",
+            "drone":"执勤无人机D",
+            "drone_id":"uav2",
+            "preset3d":"route_7",
+            "status":"待执行"
+          }
+        ],
+        "route_8": [
+          {
+            "id": "8-1",
+            "name": "保定-清苑巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别"],
+            "route": "单程23km",
+            "takeoff": "清苑收费站",
+            "route_id": "R-005",
+            "flightCount":"3",
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机E",
+            "drone_id":"uav3",
+            "preset3d":"route_8",
+            "status":"已完成",
+            "exec_at":"4"
+          },
+          {
+            "id": "8-2",
+            "name": "保定-清苑巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别"],
+            "route": "单程23km",
+            "takeoff": "清苑收费站",
+            "route_id": "R-005",
+            "time_window": ["13:00","15:00"],
+            "flightCount":"3",
+            "expectedFinish":"3",
+            "actualFinish":"",
+            "drone":"执勤无人机E",
+            "drone_id":"uav3",
+            "preset3d":"route_8",
+            "status":"待执行"
+          }
+        ],
+        "route_9": [
+          {
+            "id": "9-1",
+            "name": "清苑-望都巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程27km",
+            "takeoff": "清苑收费站",
+            "route_id": "P-002",
+            "time_window": ["11:00","14:00"],
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机F",
+            "drone_id":"uav4",
+            "preset3d":"route_9",
+            "status":"已完成",
+            "exec_at":"3"
+          },
+          {
+            "id": "9-2",
+            "name": "清苑-望都巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程27km",
+            "takeoff": "清苑收费站",
+            "route_id": "P-002",
+            "time_window": ["12:00","14:00"],
+            "expectedFinish":"3",
+            "actualFinish":"2.5",
+            "drone":"执勤无人机F",
+            "drone_id":"uav4",
+            "preset3d":"route_9",
+            "status":"待执行"
+          }
+        ],
+        "route_0": [
+          {
+            "id": "0-1",
+            "name": "杜家坎-琉璃河巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程32km",
+            "takeoff": "杜家坎收费站",
+            "route_id": "R-000",
+            "preset3d": "route_0",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "0-2",
+            "name": "杜家坎-琉璃河巡检",
+            "taskType": "线路扫描",
+            "type": ["团雾识别","病害识别"],
+            "route": "单程32km",
+            "takeoff": "杜家坎收费站",
+            "route_id": "R-000",
+            "preset3d": "route_0",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "0-3",
+            "name": "杜家坎-琉璃河巡检",
+            "taskType": "线路扫描",
+            "type": ["病害识别"],
+            "route": "单程32km",
+            "takeoff": "杜家坎收费站",
+            "route_id": "R-000",
+            "preset3d": "route_0",
+            "status":"已完成",
+            "exec_at":"3"
+          },
+          {
+            "id": "0-4",
+            "name": "杜家坎-琉璃河巡检",
+            "taskType": "线路扫描",
+            "type": ["病害识别"],
+            "route": "单程32km",
+            "takeoff": "杜家坎收费站",
+            "route_id": "R-000",
+            "preset3d": "route_0",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_2": [
+          {
+            "id": "2-1",
+            "name": "涿州北-涿州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别","拥堵点检测"],
+            "route": "单程6.3km",
+            "takeoff": "涿州北收费站",
+            "route_id": "R-002",
+            "preset3d": "route_2",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "2-2",
+            "name": "涿州北-涿州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别","拥堵点检测"],
+            "route": "单程6.3km",
+            "takeoff": "涿州北收费站",
+            "route_id": "R-002",
+            "preset3d": "route_2",
+            "status":"已完成",
+            "exec_at":"1"
+          }
+        ],
+        "route_3": [
+          {
+            "id": "3-1",
+            "name": "涿州-高碑店巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程23km",
+            "takeoff": "涿州收费站",
+            "route_id": "R-003A",
+            "preset3d": "route_3",
+            "status":"已完成",
+            "exec_at":"2"
+          },
+          {
+            "id": "3-2",
+            "name": "涿州-高碑店巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程23km",
+            "takeoff": "涿州收费站",
+            "route_id": "R-003A",
+            "preset3d": "route_3",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ],
+        "route_4": [
+          {
+            "id": "4-1",
+            "name": "高碑店-定兴巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程16km",
+            "takeoff": "高碑店收费站",
+            "route_id": "R-004A",
+            "preset3d": "route_4",
+            "status":"已完成",
+            "exec_at":"2"
+          },
+          {
+            "id": "4-2",
+            "name": "高碑店-定兴巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别"],
+            "route": "单程16km",
+            "takeoff": "高碑店收费站",
+            "route_id": "R-004A",
+            "preset3d": "route_4",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ],
+        "route_5": [
+          {
+            "id": "5-1",
+            "name": "定兴-徐水巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别"],
+            "route": "单程23km",
+            "takeoff": "定兴收费站",
+            "route_id": "R-005A",
+            "preset3d": "route_5",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "5-2",
+            "name": "定兴-徐水巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程23km",
+            "takeoff": "定兴收费站",
+            "route_id": "R-005A",
+            "preset3d": "route_5",
+            "status":"已完成",
+            "exec_at":"1"
+          }
+        ],
+        "route_10": [
+          {
+            "id": "10-1",
+            "name": "望都-定州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别"],
+            "route": "单程22km",
+            "takeoff": "望都收费站",
+            "route_id": "R-010",
+            "preset3d": "route_10",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "10-2",
+            "name": "望都-定州巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程22km",
+            "takeoff": "望都收费站",
+            "route_id": "R-010",
+            "preset3d": "route_10",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_11": [
+          {
+            "id": "11-1",
+            "name": "定州-新乐巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程38km",
+            "takeoff": "定州收费站",
+            "route_id": "R-011",
+            "preset3d": "route_11",
+            "status":"已完成",
+            "exec_at":"2"
+          },
+          {
+            "id": "11-2",
+            "name": "定州-新乐巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程38km",
+            "takeoff": "定州收费站",
+            "route_id": "R-011",
+            "preset3d": "route_11",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_12": [
+          {
+            "id": "12-1",
+            "name": "新乐-藁城北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程22km",
+            "takeoff": "新乐收费站",
+            "route_id": "R-012",
+            "preset3d": "route_12",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "12-2",
+            "name": "新乐-藁城北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程22km",
+            "takeoff": "新乐收费站",
+            "route_id": "R-012",
+            "preset3d": "route_12",
+            "status":"已完成",
+            "exec_at":"2"
+          },
+          {
+            "id": "12-3",
+            "name": "新乐-藁城北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","拥堵点检测"],
+            "route": "单程22km",
+            "takeoff": "新乐收费站",
+            "route_id": "R-012",
+            "preset3d": "route_12",
+            "status":"已完成",
+            "exec_at":"4"
+          }
+        ],
+        "route_13": [
+          {
+            "id": "13-1",
+            "name": "藁城北-石家庄机场巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别"],
+            "route": "单程16km",
+            "takeoff": "藁城北收费站",
+            "route_id": "R-013",
+            "preset3d": "route_13",
+            "status":"已完成",
+            "exec_at":"2"
+          },
+          {
+            "id": "13-2",
+            "name": "藁城北-石家庄机场巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","拥堵点检测"],
+            "route": "单程16km",
+            "takeoff": "藁城北收费站",
+            "route_id": "R-013",
+            "preset3d": "route_13",
+            "status":"已完成",
+            "exec_at":"3"
+          }
+        ],
+        "route_14": [
+          {
+            "id": "14-1",
+            "name": "石家庄机场-石家庄北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","团雾识别","病害识别","拥堵点检测"],
+            "route": "单程18km",
+            "takeoff": "石家庄机场",
+            "route_id": "R-014",
+            "preset3d": "route_14",
+            "status":"已完成",
+            "exec_at":"1"
+          },
+          {
+            "id": "14-2",
+            "name": "石家庄机场-石家庄北巡检",
+            "taskType": "线路扫描",
+            "type": ["抛洒物识别","病害识别","拥堵点检测"],
+            "route": "单程18km",
+            "takeoff": "石家庄机场",
+            "route_id": "R-014",
+            "preset3d": "route_14",
+            "status":"已完成",
+            "exec_at":"2"
+          }
+        ]
+      }
+    }
+  }
+}

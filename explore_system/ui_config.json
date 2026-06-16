@@ -1,0 +1,9 @@
+{
+  "toast_duration_ms": 4500,
+  "toast_warning_ms": 5500,
+  "toast_error_ms": 9000,
+  "status_bar_ms": 6000,
+  "mirror_to_status_bar": true,
+  "errors_use_modal_dialog": true,
+  "auto_confirm_actions": []
+}

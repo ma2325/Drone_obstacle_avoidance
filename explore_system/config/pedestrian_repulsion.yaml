@@ -1,0 +1,15 @@
+# 加载到 /pedestrian_repulsion_myviz（与 scripts/pedestrian_repulsion_node.py 中 init_node 名一致）
+# 一键启动前会 rosparam load，改此文件后只需「停止→再一键启动」，无需改代码。
+# demo_rich 里的 demo_person_* 已由代码默认加入 exclude（与 obstaclePathPlugin 抢 set_model_state 会穿地）。
+
+# 默认关闭：对 quadcopter 做 SetModel_state 侧让易与 libquadcopterPlugin 抢位姿 → 机体振荡/陷入地面
+enable_drone_sidestep_from_pedestrian: false
+
+# 默认关闭：仅在有行人且机体已埋地时小幅抬升；柱阵场景勿随意开
+enable_drone_z_recovery: false
+
+# 默认关闭：静态柱「轻推」在 cylinder_* 密集场景易误判
+enable_static_obstacle_nudge: false
+
+# 行人分离仍开启（由节点内 use_pose_separation 等控制）
+use_pose_separation: true

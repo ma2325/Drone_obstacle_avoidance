@@ -1,0 +1,20 @@
+[
+  {
+    "id": "person1",
+    "name": "张三",
+    "connection": "在线",
+    "role": "调度员",
+    "status": "执勤中",
+    "task": "监控无人机",
+    "contact": "13812345678"
+  },
+  {
+    "id": "person2",
+    "name": "李四",
+    "connection": "离线",
+    "role": "技术员",
+    "status": "休息中",
+    "task": "暂无任务",
+    "contact": "13987654321"
+  }
+]

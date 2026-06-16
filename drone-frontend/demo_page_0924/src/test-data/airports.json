@@ -1,0 +1,27 @@
+[
+  { "id": 1,  "station": "徐水",   "dockModel": "DJI Dock 2 Mini", "dockSN": "DK-0001", "lng": 115.695699, "lat": 39.043926, "droneName": "无人机1"  },
+  { "id": 2,  "station": "徐水",   "dockModel": "DJI Dock 2 Mini", "dockSN": "DK-0002", "lng": 115.695699, "lat": 39.043926, "droneName": "无人机2"  },
+  { "id": 3,  "station": "徐水",   "dockModel": "DJI Dock 2 Mini", "dockSN": "DK-0003", "lng": 115.695699, "lat": 39.043926, "droneName": "无人机3"  },
+
+  { "id": 4,  "station": "保定北", "dockModel": "DJI Dock 2 Mini", "dockSN": "DK-0004", "lng": 115.590389, "lat": 38.905494, "droneName": "无人机4"  },
+  { "id": 5,  "station": "保定北", "dockModel": "DJI Dock 2 Mini", "dockSN": "DK-0005", "lng": 115.590389, "lat": 38.905494, "droneName": "无人机5"  },
+  { "id": 6,  "station": "保定北", "dockModel": "DJI Dock 2",      "dockSN": "DK-0006", "lng": 115.590389, "lat": 38.905494, "droneName": "无人机6"  },
+
+  { "id": 7,  "station": "保定",   "dockModel": "DJI Dock 2",      "dockSN": "DK-0007", "lng": 115.579662, "lat": 38.870149, "droneName": "无人机7"  },
+  { "id": 8,  "station": "保定",   "dockModel": "DJI Dock 2 Mini", "dockSN": "DK-0008", "lng": 115.579662, "lat": 38.870149, "droneName": "无人机8"  },
+
+  { "id": 9,  "station": "保定北", "dockModel": "DJI Dock 2 Mini", "dockSN": "DK-0009", "lng": 115.579662, "lat": 38.870149, "droneName": "无人机9"  },
+
+  { "id": 10, "station": "清苑",   "dockModel": "DJI Dock 2",      "dockSN": "DK-0010", "lng": 115.449164, "lat": 38.742525, "droneName": "无人机10" },
+  { "id": 11, "station": "清苑",   "dockModel": "DJI Dock 2",      "dockSN": "DK-0011", "lng": 115.449164, "lat": 38.742525, "droneName": "无人机11" },
+  { "id": 12, "station": "清苑",   "dockModel": "DJI Dock 2 Mini", "dockSN": "DK-0012", "lng": 115.449164, "lat": 38.742525, "droneName": "无人机12" },
+
+  { "id": 13, "station": "望都",   "dockModel": "DJI Dock 2",      "dockSN": "DK-0013", "lng": 115.200221, "lat": 38.651913, "droneName": "无人机13" },
+  { "id": 14, "station": "望都",   "dockModel": "DJI Dock 2",      "dockSN": "DK-0014", "lng": 115.200221, "lat": 38.651913, "droneName": "无人机14" },
+  { "id": 15, "station": "望都",   "dockModel": "DJI Dock 2",      "dockSN": "DK-0015", "lng": 115.200221, "lat": 38.651913, "droneName": "无人机15" },
+  { "id": 16, "station": "望都",   "dockModel": "DJI Dock 2",      "dockSN": "DK-0016", "lng": 115.200221, "lat": 38.651913, "droneName": "无人机16" },
+
+  { "id": 17, "station": "徐水",   "dockModel": "DJI Dock 2",      "dockSN": "DK-0017", "lng": 115.695699, "lat": 39.043926, "droneName": "无人机17" },
+  { "id": 18, "station": "定兴",   "dockModel": "DJI Dock 2",      "dockSN": "DK-0018", "lng": 115.813384, "lat": 39.210905, "droneName": "无人机18" },
+  { "id": 19, "station": "清苑",   "dockModel": "DJI Dock 2",      "dockSN": "DK-0019", "lng": 115.455495, "lat": 38.743379, "droneName": "无人机19" }
+]

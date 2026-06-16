@@ -1,0 +1,58 @@
+{
+    "where_is_gazebo_world": "见 catkin_ws/src/uav_simulator/launch/start.launch 中 <arg name=\"world_name\" default=\"...\">；world 文件在 catkin_ws/src/uav_simulator/worlds/generated_env/*.world。一键换图：把 uav_simulator 的 start_command 改成 roslaunch uav_simulator start.launch world_name:=$(find uav_simulator)/worlds/generated_env/generated_env_static.world",
+    "catkin_workspace": "~/catkin_ws",
+    "save_log": true,
+    "log_directory": "log",
+    "processes": [
+        {
+            "name": "uav_simulator",
+            "display_name": "Gazebo 仿真器",
+            "start_command": "roslaunch uav_simulator start.launch",
+            "stop_pattern": "roslaunch uav_simulator start.launch",
+            "wait_seconds": 15,
+            "order": 1
+        },
+        {
+            "name": "pedestrian_repulsion",
+            "display_name": "行人防拖拽（Gazebo 位置分离+刹停）",
+            "start_command": "rosparam load \"__EXPLORE_ROOT__/config/pedestrian_repulsion.yaml\" /pedestrian_repulsion_myviz && python3 \"__EXPLORE_ROOT__/scripts/pedestrian_repulsion_node.py\"",
+            "stop_pattern": "pedestrian_repulsion_node.py",
+            "wait_seconds": 3,
+            "order": 2
+        },
+        {
+            "name": "navigation_runner",
+            "display_name": "导航与感知主栈",
+            "start_command": "roslaunch navigation_runner safety_and_perception_sim.launch rviz:=false",
+            "stop_pattern": "roslaunch navigation_runner safety_and_perception_sim.launch",
+            "wait_seconds": 10,
+            "order": 3
+        },
+        {
+            "name": "dynamic_predictor",
+            "display_name": "行人轨迹预测（需 EXPLORE_LAUNCH_DYNAMIC_PREDICTOR=1 且已编译包）",
+            "start_command": "bash \"__EXPLORE_ROOT__/scripts/run_dynamic_predictor_optional.sh\"",
+            "stop_pattern": "run_dynamic_predictor_optional.sh",
+            "wait_seconds": 6,
+            "order": 4,
+            "enabled_if_env": "EXPLORE_LAUNCH_DYNAMIC_PREDICTOR"
+        },
+        {
+            "name": "navrl_rl_navigation",
+            "display_name": "NavRL 强化学习导航",
+            "start_command": "export NAVRL_ROOT=\"__NAVRL_ROOT__\" && bash \"__EXPLORE_ROOT__/scripts/run_navrl_navigation.sh\"",
+            "stop_pattern": "rosrun navigation_runner navigation_node.py",
+            "wait_seconds": 12,
+            "order": 5
+        },
+        {
+            "name": "intent_mpc_stack",
+            "display_name": "Intent-MPC 演示栈（与 NavRL 二选一，需先编译）",
+            "start_command": "bash \"__EXPLORE_ROOT__/scripts/run_intent_mpc_optional.sh\"",
+            "stop_pattern": "run_intent_mpc_optional.sh",
+            "wait_seconds": 8,
+            "order": 6,
+            "enabled_if_env": "EXPLORE_LAUNCH_INTENT_MPC"
+        }
+    ]
+}
